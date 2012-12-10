@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620D8FDA15CE073600790B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D8FD915CE073600790B35 /* Foundation.framework */; };
+		620D902615CE0AFE00790B35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D902515CE0AFE00790B35 /* UIKit.framework */; };
+		6220F1651675B6B00088D966 /* NSArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1111675B60F0088D966 /* NSArray+Extended.m */; };
+		6220F1661675B6B00088D966 /* NSData+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1131675B60F0088D966 /* NSData+Extended.m */; };
+		6220F1671675B6B00088D966 /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1151675B60F0088D966 /* NSDate+Extended.m */; };
+		6220F1681675B6B00088D966 /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */; };
+		6220F1691675B6B00088D966 /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1191675B60F0088D966 /* NSDictionary+Extended.m */; };
+		6220F16A1675B6B00088D966 /* NSMutableArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */; };
+		6220F16B1675B6B00088D966 /* NSMutableSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */; };
+		6220F16C1675B6B00088D966 /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11F1675B60F0088D966 /* NSNumber+Extended.m */; };
+		6220F16D1675B6B00088D966 /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1211675B60F0088D966 /* NSObject+Extended.m */; };
+		6220F16E1675B6B00088D966 /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1231675B60F0088D966 /* NSSet+Extended.m */; };
+		6220F16F1675B6B00088D966 /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1251675B60F0088D966 /* NSString+Extended.m */; };
+		6220F1701675B6B00088D966 /* UIBarButtonItem+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */; };
+		6220F1711675B6B00088D966 /* UIButton+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12A1675B60F0088D966 /* UIButton+Extended.m */; };
+		6220F1721675B6B00088D966 /* UICollectionView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */; };
+		6220F1731675B6B00088D966 /* UIColorCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */; };
+		6220F1741675B6B00088D966 /* UIImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1301675B60F0088D966 /* UIImage+Extended.m */; };
+		6220F1751675B6B00088D966 /* UIImageView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1321675B60F0088D966 /* UIImageView+Extended.m */; };
+		6220F1761675B6B00088D966 /* UINavigationBar+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */; };
+		6220F1771675B6B00088D966 /* UIScreen+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1361675B60F0088D966 /* UIScreen+Extended.m */; };
+		6220F1781675B6B00088D966 /* UIScrollView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1381675B60F0088D966 /* UIScrollView+Extended.m */; };
+		6220F1791675B6B00088D966 /* UITableView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13A1675B60F0088D966 /* UITableView+Extended.m */; };
+		6220F17A1675B6B00088D966 /* UIView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13C1675B60F0088D966 /* UIView+Extended.m */; };
+		6220F17B1675B6B00088D966 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10E1675B60F0088D966 /* CHDebug.m */; };
+		6220F17C1675B6B00088D966 /* CHCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10C1675B60F0088D966 /* CHCrayonPalette.m */; };
+		6220F17D1675B6CB0088D966 /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1101675B60F0088D966 /* NSArray+Extended.h */; };
+		6220F17E1675B6CB0088D966 /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1121675B60F0088D966 /* NSData+Extended.h */; };
+		6220F17F1675B6CB0088D966 /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1141675B60F0088D966 /* NSDate+Extended.h */; };
+		6220F1801675B6CB0088D966 /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */; };
+		6220F1811675B6CB0088D966 /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1181675B60F0088D966 /* NSDictionary+Extended.h */; };
+		6220F1821675B6CB0088D966 /* NSMutableArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */; };
+		6220F1831675B6CB0088D966 /* NSMutableSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */; };
+		6220F1841675B6CB0088D966 /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11E1675B60F0088D966 /* NSNumber+Extended.h */; };
+		6220F1851675B6CB0088D966 /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1201675B60F0088D966 /* NSObject+Extended.h */; };
+		6220F1861675B6CB0088D966 /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1221675B60F0088D966 /* NSSet+Extended.h */; };
+		6220F1871675B6CB0088D966 /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1241675B60F0088D966 /* NSString+Extended.h */; };
+		6220F1881675B6CB0088D966 /* UIBarButtonItem+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */; };
+		6220F1891675B6CB0088D966 /* UIButton+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1291675B60F0088D966 /* UIButton+Extended.h */; };
+		6220F18A1675B6CB0088D966 /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */; };
+		6220F18B1675B6CB0088D966 /* UIColorCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */; };
+		6220F18C1675B6CB0088D966 /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12F1675B60F0088D966 /* UIImage+Extended.h */; };
+		6220F18D1675B6CB0088D966 /* UIImageView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1311675B60F0088D966 /* UIImageView+Extended.h */; };
+		6220F18E1675B6CB0088D966 /* UINavigationBar+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */; };
+		6220F18F1675B6CB0088D966 /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1351675B60F0088D966 /* UIScreen+Extended.h */; };
+		6220F1901675B6CB0088D966 /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1371675B60F0088D966 /* UIScrollView+Extended.h */; };
+		6220F1911675B6CB0088D966 /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1391675B60F0088D966 /* UITableView+Extended.h */; };
+		6220F1921675B6CB0088D966 /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F13B1675B60F0088D966 /* UIView+Extended.h */; };
+		6220F1931675B6CB0088D966 /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10D1675B60F0088D966 /* CHDebug.h */; };
+		6220F1941675B6CB0088D966 /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10B1675B60F0088D966 /* CHCrayonPalette.h */; };
+		6220F1951675B6CB0088D966 /* CocoaHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1261675B60F0088D966 /* CocoaHelper.h */; };
+		62E8389F15E517B500EBC23C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E8389E15E517B300EBC23C /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		620D8FD415CE073600790B35 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				6220F17D1675B6CB0088D966 /* NSArray+Extended.h in CopyFiles */,
+				6220F17E1675B6CB0088D966 /* NSData+Extended.h in CopyFiles */,
+				6220F17F1675B6CB0088D966 /* NSDate+Extended.h in CopyFiles */,
+				6220F1801675B6CB0088D966 /* NSDateFormatter+Extended.h in CopyFiles */,
+				6220F1811675B6CB0088D966 /* NSDictionary+Extended.h in CopyFiles */,
+				6220F1821675B6CB0088D966 /* NSMutableArray+Extended.h in CopyFiles */,
+				6220F1831675B6CB0088D966 /* NSMutableSet+Extended.h in CopyFiles */,
+				6220F1841675B6CB0088D966 /* NSNumber+Extended.h in CopyFiles */,
+				6220F1851675B6CB0088D966 /* NSObject+Extended.h in CopyFiles */,
+				6220F1861675B6CB0088D966 /* NSSet+Extended.h in CopyFiles */,
+				6220F1871675B6CB0088D966 /* NSString+Extended.h in CopyFiles */,
+				6220F1881675B6CB0088D966 /* UIBarButtonItem+Extended.h in CopyFiles */,
+				6220F1891675B6CB0088D966 /* UIButton+Extended.h in CopyFiles */,
+				6220F18A1675B6CB0088D966 /* UICollectionView+Extended.h in CopyFiles */,
+				6220F18B1675B6CB0088D966 /* UIColorCrayonPalette.h in CopyFiles */,
+				6220F18C1675B6CB0088D966 /* UIImage+Extended.h in CopyFiles */,
+				6220F18D1675B6CB0088D966 /* UIImageView+Extended.h in CopyFiles */,
+				6220F18E1675B6CB0088D966 /* UINavigationBar+Extended.h in CopyFiles */,
+				6220F18F1675B6CB0088D966 /* UIScreen+Extended.h in CopyFiles */,
+				6220F1901675B6CB0088D966 /* UIScrollView+Extended.h in CopyFiles */,
+				6220F1911675B6CB0088D966 /* UITableView+Extended.h in CopyFiles */,
+				6220F1921675B6CB0088D966 /* UIView+Extended.h in CopyFiles */,
+				6220F1931675B6CB0088D966 /* CHDebug.h in CopyFiles */,
+				6220F1941675B6CB0088D966 /* CHCrayonPalette.h in CopyFiles */,
+				6220F1951675B6CB0088D966 /* CocoaHelper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		620D8FD615CE073600790B35 /* libCocoaHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		620D8FD915CE073600790B35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		620D902515CE0AFE00790B35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		620D906815CE119200790B35 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		6220F10B1675B60F0088D966 /* CHCrayonPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCrayonPalette.h; sourceTree = "<group>"; };
+		6220F10C1675B60F0088D966 /* CHCrayonPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCrayonPalette.m; sourceTree = "<group>"; };
+		6220F10D1675B60F0088D966 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDebug.h; sourceTree = "<group>"; };
+		6220F10E1675B60F0088D966 /* CHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDebug.m; sourceTree = "<group>"; };
+		6220F1101675B60F0088D966 /* NSArray+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extended.h"; sourceTree = "<group>"; };
+		6220F1111675B60F0088D966 /* NSArray+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extended.m"; sourceTree = "<group>"; };
+		6220F1121675B60F0088D966 /* NSData+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extended.h"; sourceTree = "<group>"; };
+		6220F1131675B60F0088D966 /* NSData+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extended.m"; sourceTree = "<group>"; };
+		6220F1141675B60F0088D966 /* NSDate+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extended.h"; sourceTree = "<group>"; };
+		6220F1151675B60F0088D966 /* NSDate+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extended.m"; sourceTree = "<group>"; };
+		6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Extended.h"; sourceTree = "<group>"; };
+		6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Extended.m"; sourceTree = "<group>"; };
+		6220F1181675B60F0088D966 /* NSDictionary+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extended.h"; sourceTree = "<group>"; };
+		6220F1191675B60F0088D966 /* NSDictionary+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extended.m"; sourceTree = "<group>"; };
+		6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extended.h"; sourceTree = "<group>"; };
+		6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extended.m"; sourceTree = "<group>"; };
+		6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+Extended.h"; sourceTree = "<group>"; };
+		6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Extended.m"; sourceTree = "<group>"; };
+		6220F11E1675B60F0088D966 /* NSNumber+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extended.h"; sourceTree = "<group>"; };
+		6220F11F1675B60F0088D966 /* NSNumber+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extended.m"; sourceTree = "<group>"; };
+		6220F1201675B60F0088D966 /* NSObject+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extended.h"; sourceTree = "<group>"; };
+		6220F1211675B60F0088D966 /* NSObject+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extended.m"; sourceTree = "<group>"; };
+		6220F1221675B60F0088D966 /* NSSet+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Extended.h"; sourceTree = "<group>"; };
+		6220F1231675B60F0088D966 /* NSSet+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Extended.m"; sourceTree = "<group>"; };
+		6220F1241675B60F0088D966 /* NSString+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extended.h"; sourceTree = "<group>"; };
+		6220F1251675B60F0088D966 /* NSString+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extended.m"; sourceTree = "<group>"; };
+		6220F1261675B60F0088D966 /* CocoaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHelper.h; sourceTree = "<group>"; };
+		6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extended.h"; sourceTree = "<group>"; };
+		6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extended.m"; sourceTree = "<group>"; };
+		6220F1291675B60F0088D966 /* UIButton+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extended.h"; sourceTree = "<group>"; };
+		6220F12A1675B60F0088D966 /* UIButton+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extended.m"; sourceTree = "<group>"; };
+		6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Extended.h"; sourceTree = "<group>"; };
+		6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Extended.m"; sourceTree = "<group>"; };
+		6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorCrayonPalette.h; sourceTree = "<group>"; };
+		6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorCrayonPalette.m; sourceTree = "<group>"; };
+		6220F12F1675B60F0088D966 /* UIImage+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extended.h"; sourceTree = "<group>"; };
+		6220F1301675B60F0088D966 /* UIImage+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extended.m"; sourceTree = "<group>"; };
+		6220F1311675B60F0088D966 /* UIImageView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extended.h"; sourceTree = "<group>"; };
+		6220F1321675B60F0088D966 /* UIImageView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extended.m"; sourceTree = "<group>"; };
+		6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extended.h"; sourceTree = "<group>"; };
+		6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extended.m"; sourceTree = "<group>"; };
+		6220F1351675B60F0088D966 /* UIScreen+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extended.h"; sourceTree = "<group>"; };
+		6220F1361675B60F0088D966 /* UIScreen+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Extended.m"; sourceTree = "<group>"; };
+		6220F1371675B60F0088D966 /* UIScrollView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extended.h"; sourceTree = "<group>"; };
+		6220F1381675B60F0088D966 /* UIScrollView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extended.m"; sourceTree = "<group>"; };
+		6220F1391675B60F0088D966 /* UITableView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Extended.h"; sourceTree = "<group>"; };
+		6220F13A1675B60F0088D966 /* UITableView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Extended.m"; sourceTree = "<group>"; };
+		6220F13B1675B60F0088D966 /* UIView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extended.h"; sourceTree = "<group>"; };
+		6220F13C1675B60F0088D966 /* UIView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extended.m"; sourceTree = "<group>"; };
+		6220F1631675B6860088D966 /* CocoaHelper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CocoaHelper-Prefix.pch"; path = "CocoaHelper/CocoaHelper-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		6220F1641675B68F0088D966 /* LICENSE.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.markdown; sourceTree = SOURCE_ROOT; };
+		62E8389E15E517B300EBC23C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		620D8FD315CE073600790B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E8389F15E517B500EBC23C /* CoreGraphics.framework in Frameworks */,
+				620D8FDA15CE073600790B35 /* Foundation.framework in Frameworks */,
+				620D902615CE0AFE00790B35 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620D8FCB15CE073600790B35 = {
+			isa = PBXGroup;
+			children = (
+				620D8FDB15CE073600790B35 /* CocoaHelper */,
+				620D8FD815CE073600790B35 /* Frameworks */,
+				620D8FD715CE073600790B35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		620D8FD715CE073600790B35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620D8FD615CE073600790B35 /* libCocoaHelper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		620D8FD815CE073600790B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E8389E15E517B300EBC23C /* CoreGraphics.framework */,
+				620D8FD915CE073600790B35 /* Foundation.framework */,
+				620D902515CE0AFE00790B35 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		620D8FDB15CE073600790B35 /* CocoaHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6220F10A1675B60F0088D966 /* CocoaHelper */,
+				620D903715CE0C2300790B35 /* Resources */,
+				620D8FDC15CE073600790B35 /* Supporting Files */,
+			);
+			name = CocoaHelper;
+			path = ObjCHelper;
+			sourceTree = "<group>";
+		};
+		620D8FDC15CE073600790B35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6220F1631675B6860088D966 /* CocoaHelper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		620D903715CE0C2300790B35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6220F1641675B68F0088D966 /* LICENSE.markdown */,
+				620D906815CE119200790B35 /* README.markdown */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6220F10A1675B60F0088D966 /* CocoaHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6220F1571675B6320088D966 /* Categories */,
+				6220F1561675B6210088D966 /* Constants */,
+				6220F1551675B6180088D966 /* Utilities */,
+				6220F1261675B60F0088D966 /* CocoaHelper.h */,
+			);
+			path = CocoaHelper;
+			sourceTree = SOURCE_ROOT;
+		};
+		6220F1551675B6180088D966 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6220F10B1675B60F0088D966 /* CHCrayonPalette.h */,
+				6220F10C1675B60F0088D966 /* CHCrayonPalette.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		6220F1561675B6210088D966 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6220F10D1675B60F0088D966 /* CHDebug.h */,
+				6220F10E1675B60F0088D966 /* CHDebug.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		6220F1571675B6320088D966 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6220F1101675B60F0088D966 /* NSArray+Extended.h */,
+				6220F1111675B60F0088D966 /* NSArray+Extended.m */,
+				6220F1121675B60F0088D966 /* NSData+Extended.h */,
+				6220F1131675B60F0088D966 /* NSData+Extended.m */,
+				6220F1141675B60F0088D966 /* NSDate+Extended.h */,
+				6220F1151675B60F0088D966 /* NSDate+Extended.m */,
+				6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */,
+				6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */,
+				6220F1181675B60F0088D966 /* NSDictionary+Extended.h */,
+				6220F1191675B60F0088D966 /* NSDictionary+Extended.m */,
+				6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */,
+				6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */,
+				6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */,
+				6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */,
+				6220F11E1675B60F0088D966 /* NSNumber+Extended.h */,
+				6220F11F1675B60F0088D966 /* NSNumber+Extended.m */,
+				6220F1201675B60F0088D966 /* NSObject+Extended.h */,
+				6220F1211675B60F0088D966 /* NSObject+Extended.m */,
+				6220F1221675B60F0088D966 /* NSSet+Extended.h */,
+				6220F1231675B60F0088D966 /* NSSet+Extended.m */,
+				6220F1241675B60F0088D966 /* NSString+Extended.h */,
+				6220F1251675B60F0088D966 /* NSString+Extended.m */,
+				6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */,
+				6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */,
+				6220F1291675B60F0088D966 /* UIButton+Extended.h */,
+				6220F12A1675B60F0088D966 /* UIButton+Extended.m */,
+				6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */,
+				6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */,
+				6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */,
+				6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */,
+				6220F12F1675B60F0088D966 /* UIImage+Extended.h */,
+				6220F1301675B60F0088D966 /* UIImage+Extended.m */,
+				6220F1311675B60F0088D966 /* UIImageView+Extended.h */,
+				6220F1321675B60F0088D966 /* UIImageView+Extended.m */,
+				6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */,
+				6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */,
+				6220F1351675B60F0088D966 /* UIScreen+Extended.h */,
+				6220F1361675B60F0088D966 /* UIScreen+Extended.m */,
+				6220F1371675B60F0088D966 /* UIScrollView+Extended.h */,
+				6220F1381675B60F0088D966 /* UIScrollView+Extended.m */,
+				6220F1391675B60F0088D966 /* UITableView+Extended.h */,
+				6220F13A1675B60F0088D966 /* UITableView+Extended.m */,
+				6220F13B1675B60F0088D966 /* UIView+Extended.h */,
+				6220F13C1675B60F0088D966 /* UIView+Extended.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		620D8FD515CE073600790B35 /* CocoaHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620D8FE415CE073600790B35 /* Build configuration list for PBXNativeTarget "CocoaHelper" */;
+			buildPhases = (
+				620D8FD215CE073600790B35 /* Sources */,
+				620D8FD315CE073600790B35 /* Frameworks */,
+				620D8FD415CE073600790B35 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaHelper;
+			productName = ObjCHelper;
+			productReference = 620D8FD615CE073600790B35 /* libCocoaHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		620D8FCD15CE073600790B35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OH;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Michael Reneer";
+			};
+			buildConfigurationList = 620D8FD015CE073600790B35 /* Build configuration list for PBXProject "CocoaHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 620D8FCB15CE073600790B35;
+			productRefGroup = 620D8FD715CE073600790B35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				620D8FD515CE073600790B35 /* CocoaHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		620D8FD215CE073600790B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6220F1651675B6B00088D966 /* NSArray+Extended.m in Sources */,
+				6220F1661675B6B00088D966 /* NSData+Extended.m in Sources */,
+				6220F1671675B6B00088D966 /* NSDate+Extended.m in Sources */,
+				6220F1681675B6B00088D966 /* NSDateFormatter+Extended.m in Sources */,
+				6220F1691675B6B00088D966 /* NSDictionary+Extended.m in Sources */,
+				6220F16A1675B6B00088D966 /* NSMutableArray+Extended.m in Sources */,
+				6220F16B1675B6B00088D966 /* NSMutableSet+Extended.m in Sources */,
+				6220F16C1675B6B00088D966 /* NSNumber+Extended.m in Sources */,
+				6220F16D1675B6B00088D966 /* NSObject+Extended.m in Sources */,
+				6220F16E1675B6B00088D966 /* NSSet+Extended.m in Sources */,
+				6220F16F1675B6B00088D966 /* NSString+Extended.m in Sources */,
+				6220F1701675B6B00088D966 /* UIBarButtonItem+Extended.m in Sources */,
+				6220F1711675B6B00088D966 /* UIButton+Extended.m in Sources */,
+				6220F1721675B6B00088D966 /* UICollectionView+Extended.m in Sources */,
+				6220F1731675B6B00088D966 /* UIColorCrayonPalette.m in Sources */,
+				6220F1741675B6B00088D966 /* UIImage+Extended.m in Sources */,
+				6220F1751675B6B00088D966 /* UIImageView+Extended.m in Sources */,
+				6220F1761675B6B00088D966 /* UINavigationBar+Extended.m in Sources */,
+				6220F1771675B6B00088D966 /* UIScreen+Extended.m in Sources */,
+				6220F1781675B6B00088D966 /* UIScrollView+Extended.m in Sources */,
+				6220F1791675B6B00088D966 /* UITableView+Extended.m in Sources */,
+				6220F17A1675B6B00088D966 /* UIView+Extended.m in Sources */,
+				6220F17B1675B6B00088D966 /* CHDebug.m in Sources */,
+				6220F17C1675B6B00088D966 /* CHCrayonPalette.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		620D8FE215CE073600790B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620D8FE315CE073600790B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		620D8FE515CE073600790B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaHelper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper/CocoaHelper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CocoaHelper;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620D8FE615CE073600790B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaHelper.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper/CocoaHelper-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CocoaHelper;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		620D8FD015CE073600790B35 /* Build configuration list for PBXProject "CocoaHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620D8FE215CE073600790B35 /* Debug */,
+				620D8FE315CE073600790B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620D8FE415CE073600790B35 /* Build configuration list for PBXNativeTarget "CocoaHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620D8FE515CE073600790B35 /* Debug */,
+				620D8FE615CE073600790B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 620D8FCD15CE073600790B35 /* Project object */;
+}
