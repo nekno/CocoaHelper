@@ -24,8 +24,4 @@
 
 #pragma mark - Test Methods - User
 
-- (void)testExample {
-    STFail(@"Unit tests are not implemented yet in CocoaHelperLogicTests");
-}
-
 @end
