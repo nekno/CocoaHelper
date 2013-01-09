@@ -15,435 +15,867 @@
 #pragma mark - Class Methods
 
 + (UIColor *)aluminumColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 153.0f / 255.0f;
-    CGFloat green = 153.0f / 255.0f;
-    CGFloat red = 153.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 153.0f / 255.0f;
+        CGFloat green = 153.0f / 255.0f;
+        CGFloat red = 153.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)aquaColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)asparagusColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)bananaColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)blueberryColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)bubblegumColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 102.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 102.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)cantaloupeColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 204.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 204.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)carnationColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 207.0f / 255.0f;
-    CGFloat green = 111.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 207.0f / 255.0f;
+        CGFloat green = 111.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)cayenneColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)cloverColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)eggplantColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 64.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 64.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)fernColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 64.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 64.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)floraColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)grapeColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)honeydewColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 204.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 204.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)iceColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)ironColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 76.0f / 255.0f;
-    CGFloat green = 76.0f / 255.0f;
-    CGFloat red = 76.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 76.0f / 255.0f;
+        CGFloat green = 76.0f / 255.0f;
+        CGFloat red = 76.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)lavenderColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 102.0f / 255.0f;
-    CGFloat red = 204.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 102.0f / 255.0f;
+        CGFloat red = 204.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)leadColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 25.0f / 255.0f;
-    CGFloat green = 25.0f / 255.0f;
-    CGFloat red = 25.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 25.0f / 255.0f;
+        CGFloat green = 25.0f / 255.0f;
+        CGFloat red = 25.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)lemonColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)licoriceColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)limeColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)magentaColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)magnesiumColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 179.0f / 255.0f;
-    CGFloat green = 179.0f / 255.0f;
-    CGFloat red = 179.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 179.0f / 255.0f;
+        CGFloat green = 179.0f / 255.0f;
+        CGFloat red = 179.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)maraschinoColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)maroonColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 64.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 64.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)midnightColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)mochaColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 64.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 64.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)mossColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 64.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 64.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)murcuryColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 230.0f / 255.0f;
-    CGFloat green = 230.0f / 255.0f;
-    CGFloat red = 230.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 230.0f / 255.0f;
+        CGFloat green = 230.0f / 255.0f;
+        CGFloat red = 230.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)nickelColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)oceanColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 64.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 64.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)orchidColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 102.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 102.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)plumColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 128.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 128.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)salmonColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 102.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 102.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)seaFoamColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)silverColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 204.0f / 255.0f;
-    CGFloat green = 204.0f / 255.0f;
-    CGFloat red = 204.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 204.0f / 255.0f;
+        CGFloat green = 204.0f / 255.0f;
+        CGFloat red = 204.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)skyColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 204.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 204.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)snowColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)spindriftColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 204.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 204.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)springColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)steelColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 102.0f / 255.0f;
-    CGFloat green = 102.0f / 255.0f;
-    CGFloat red = 102.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 102.0f / 255.0f;
+        CGFloat green = 102.0f / 255.0f;
+        CGFloat red = 102.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)strawberryColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 105.0f / 255.0f;
-    CGFloat green = 0.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 105.0f / 255.0f;
+        CGFloat green = 0.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)tangerineColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 0.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 255.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 0.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 255.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)tealColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 128.0f / 255.0f;
-    CGFloat green = 128.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 128.0f / 255.0f;
+        CGFloat green = 128.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)tinColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 127.0f / 255.0f;
-    CGFloat green = 127.0f / 255.0f;
-    CGFloat red = 127.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 127.0f / 255.0f;
+        CGFloat green = 127.0f / 255.0f;
+        CGFloat red = 127.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)tungstenColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 51.0f / 255.0f;
-    CGFloat green = 51.0f / 255.0f;
-    CGFloat red = 51.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 51.0f / 255.0f;
+        CGFloat green = 51.0f / 255.0f;
+        CGFloat red = 51.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 + (UIColor *)turquoiseColor {
-    CGFloat alpha = 1.0f;
-    CGFloat blue = 255.0f / 255.0f;
-    CGFloat green = 255.0f / 255.0f;
-    CGFloat red = 0.0f / 255.0f;
+    static UIColor *color = nil;
     
-    return [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    dispatch_block_t block = ^(void) {
+        CGFloat alpha = 1.0f;
+        CGFloat blue = 255.0f / 255.0f;
+        CGFloat green = 255.0f / 255.0f;
+        CGFloat red = 0.0f / 255.0f;
+        
+        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
+    };
+    
+    static dispatch_once_t predicate = 0;
+    dispatch_once(&predicate, block);
+    
+    return color;
 }
 
 @end
