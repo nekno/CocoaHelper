@@ -44,7 +44,7 @@
 }
 
 - (id)initWithLayer:(CALayer *)layer {
-    UIGraphicsBeginImageContextWithOptions(layer.frame.size, NO, 0.0f);
+    UIGraphicsBeginImageContextWithOptions(layer.bounds.size, NO, 0.0f);
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     [layer renderInContext:context];
@@ -56,14 +56,20 @@
     return self;
 }
 
-- (id)initWithPath:(UIBezierPath *)bezierPath fillColor:(UIColor *)fillColor strokeColor:(UIColor *)strokeColor{
+- (id)initWithPath:(UIBezierPath *)bezierPath fillColor:(UIColor *)fillColor strokeColor:(UIColor *)strokeColor {
     UIGraphicsBeginImageContextWithOptions(bezierPath.bounds.size, NO, 0.0f);
     
-    [fillColor setFill];
-    [strokeColor setStroke];
+    if (fillColor != nil) {
+        [fillColor setFill];
+        
+        [bezierPath fill];
+    }
     
-    [bezierPath fill];
-    [bezierPath stroke];
+    if (strokeColor != nil) {
+        [strokeColor setStroke];
+        
+        [bezierPath stroke];
+    }
     
     self = UIGraphicsGetImageFromCurrentImageContext();
     
