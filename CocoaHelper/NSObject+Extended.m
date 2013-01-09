@@ -3,7 +3,7 @@
 //  CocoaHelper
 //
 //  Created by Michael Reneer on 6/14/12.
-//  Copyright (c) 2013 Michael Reneer. All rights reserved.
+//  Copyright (c) 2012 Michael Reneer. All rights reserved.
 //
 
 #import "NSObject+Extended.h"
@@ -19,6 +19,5 @@
     dispatch_queue_t queue = dispatch_get_main_queue();
     dispatch_after(when, queue, block);
 }
-
 
 @end
