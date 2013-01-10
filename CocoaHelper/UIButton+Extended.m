@@ -9,7 +9,7 @@
 #import "UIButton+Extended.h"
 #import "UIImage+Extended.h"
 
-#pragma mark - Interface
+#pragma mark - Implementation
 
 @implementation UIButton (Extended)
 
