@@ -12,7 +12,7 @@
 
 @interface NSDateFormatter (Extended)
 
-- (NSString *)relativeDateAndTimeStringFromDate:(NSDate *)date;
-- (NSString *)relativeDateOnlyStringFromDate:(NSDate *)date;
++ (NSString *)relativeDateAndTimeStringFromDate:(NSDate *)date;
++ (NSString *)relativeDateOnlyStringFromDate:(NSDate *)date;
 
 @end
