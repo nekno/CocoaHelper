@@ -34,68 +34,92 @@
     if ([day isEqualToToday]) {
         NSTimeInterval interval = round([date timeIntervalSinceNow]);
         
-        if (interval * -1 >= TimeIntervalOfOneHour) {
-            NSInteger hours = floor(interval * -1 / TimeIntervalOfOneHour);
+        if (interval <= TimeIntervalOfOneHour * -1) {
+            NSInteger hours = floor(interval / TimeIntervalOfOneHour * -1);
             
             if (hours == 1) {
-                return @"1 hour ago";
+                NSString *hoursFormat = NSLocalizedString(@"HOUR_AGO", @"Format used to represent the relative date and time strings for 1 hour ago.");
+                
+                return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
             else {
-                return [[NSString alloc] initWithFormat:@"%d hours ago", hours];
+                NSString *hoursFormat = NSLocalizedString(@"HOURS_AGO", @"Format used to represent the relative date and time strings for more than 1 hour ago.");
+                
+                return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
         }
-        else if (interval * -1 >= TimeIntervalOfOneMinute) {
-            NSInteger minutes = floor(interval * -1 / TimeIntervalOfOneMinute);
+        else if (interval <= TimeIntervalOfOneMinute * -1) {
+            NSInteger minutes = floor(interval / TimeIntervalOfOneMinute * -1);
             
             if (minutes == 1) {
-                return @"1 minute ago";
+                NSString *minutesFormat = NSLocalizedString(@"MINUTE_AGO", @"Format used to represent the relative date and time strings for 1 minute ago.");
+                
+                return [[NSString alloc] initWithFormat:minutesFormat, minutes];
             }
             else {
-                return [[NSString alloc] initWithFormat:@"%d minutes ago", minutes];
+                NSString *minutesFormat = NSLocalizedString(@"MINUTES_AGO", @"Format used to represent the relative date and time strings for more than 1 minute ago.");
+                
+                return [[NSString alloc] initWithFormat:minutesFormat, minutes];
             }
         }
-        else if (interval * -1 >= TimeIntervalOfOneSecond) {
-            NSInteger seconds = floor(interval * -1 / TimeIntervalOfOneSecond);
+        else if (interval <= TimeIntervalOfOneSecond * -1) {
+            NSInteger seconds = floor(interval / TimeIntervalOfOneSecond * -1);
             
             if (seconds == 1) {
-                return @"1 second ago";
+                NSString *secondsFormat = NSLocalizedString(@"SECOND_AGO", @"Format used to represent the relative date and time strings for 1 second ago.");
+                
+                return [[NSString alloc] initWithFormat:secondsFormat, seconds];
             }
             else {
-                return [[NSString alloc] initWithFormat:@"%d seconds ago", seconds];
+                NSString *secondsFormat = NSLocalizedString(@"SECONDS_AGO", @"Format used to represent the relative date and time strings for more than 1 minute ago.");
+                
+                return [[NSString alloc] initWithFormat:secondsFormat, seconds];
             }
         }
-        else if (interval < TimeIntervalOfOneSecond) {
-            return @"just now";
-        }
-        else if (interval < TimeIntervalOfOneMinute) {
-            NSInteger seconds = floor(interval / TimeIntervalOfOneSecond);
-            
-            if (seconds == 1) {
-                return @"1 second from now";
-            }
-            else {
-                return [[NSString alloc] initWithFormat:@"%d seconds from now", seconds];
-            }
-        }
-        else if (interval < TimeIntervalOfOneHour) {
-            NSInteger minutes = floor(interval / TimeIntervalOfOneMinute);
-            
-            if (minutes == 1) {
-                return @"1 minute from now";
-            }
-            else {
-                return [[NSString alloc] initWithFormat:@"%d minutes from now", minutes];
-            }
-        }
-        else {
+        else if (interval >= TimeIntervalOfOneHour) {
             NSInteger hours = floor(interval / TimeIntervalOfOneHour);
             
             if (hours == 1) {
-                return @"1 hour from now";
+                NSString *hoursFormat = NSLocalizedString(@"HOUR_FROM_NOW", @"Format used to represent the relative date and time strings for 1 hour from now.");
+                
+                return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
             else {
-                return [[NSString alloc] initWithFormat:@"%d hours from now", hours];
+                NSString *hoursFormat = NSLocalizedString(@"HOURS_FROM_NOW", @"Format used to represent the relative date and time strings for more than 1 hour from now.");
+                
+                return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
+        }
+        else if (interval >= TimeIntervalOfOneMinute) {
+            NSInteger minutes = floor(interval / TimeIntervalOfOneMinute);
+            
+            if (minutes == 1) {
+                NSString *minutesFormat = NSLocalizedString(@"MINUTE_FROM_NOW", @"Format used to represent the relative date and time strings for 1 minute from now.");
+                
+                return [[NSString alloc] initWithFormat:minutesFormat, minutes];
+            }
+            else {
+                NSString *minutesFormat = NSLocalizedString(@"MINUTES_FROM_NOW", @"Format used to represent the relative date and time strings for more than 1 minute from now.");
+                
+                return [[NSString alloc] initWithFormat:minutesFormat, minutes];
+            }
+        }
+        else if (interval >= TimeIntervalOfOneSecond) {
+            NSInteger seconds = floor(interval / TimeIntervalOfOneSecond);
+            
+            if (seconds == 1) {
+                NSString *secondsFormat = NSLocalizedString(@"SECOND_FROM_NOW", @"Format used to represent the relative date and time strings for 1 second from now.");
+                
+                return [[NSString alloc] initWithFormat:secondsFormat, seconds];
+            }
+            else {
+                NSString *secondsFormat = NSLocalizedString(@"SECONDS_FROM_NOW", @"Format used to represent the relative date and time strings for more than 1 second from now.");
+                
+                return [[NSString alloc] initWithFormat:secondsFormat, seconds];
+            }
+        }
+        else {
+            return NSLocalizedString(@"NOW", @"String used to represent the relative date and time string for now.");
         }
     }
     else if ([day isEqualToYesterday]) {
@@ -109,15 +133,15 @@
         return [formatter stringFromDate:date];
     }
     else {
-        NSInteger interval = floor(abs([date timeIntervalSinceNow]));
+        NSInteger interval = floor(abs([day timeIntervalSinceToday]));
         
-        if (interval > TimeIntervalOfOneWeek) {
-            NSDateFormatter *formatter = [NSDateFormatter sharedDateAndTimeDateFormatter];
+        if (interval < TimeIntervalOfSevenDays) {
+            NSDateFormatter *formatter = [NSDateFormatter sharedWeekdayAndTimeDateFormatter];
             
             return [formatter stringFromDate:date];
         }
         else {
-            NSDateFormatter *formatter = [NSDateFormatter sharedWeekdayAndTimeDateFormatter];
+            NSDateFormatter *formatter = [NSDateFormatter sharedDateAndTimeDateFormatter];
             
             return [formatter stringFromDate:date];
         }
@@ -130,13 +154,13 @@
     NSDate *day = [date beginningOfDay];
     
     if ([day isEqualToToday]) {
-        return @"Today";
+        return NSLocalizedString(@"TODAY", @"String used to represent relative date string for today.");
     }
     else if ([day isEqualToYesterday]) {
-        return @"Yesterday";
+        return NSLocalizedString(@"YESTERDAY", @"String used to represent relative date string for yesterday.");
     }
     else if ([day isEqualToTomorrow]) {
-        return @"Tomorrow";
+        return NSLocalizedString(@"TOMORROW", @"String used to represent relative date string for tomorrow.");
     }
     else {
         NSInteger interval = floor(abs([date timeIntervalSinceNow]));
@@ -168,8 +192,13 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"MMMdyyyy" options:0 locale:locale];
+        NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String used to separate the date and time components of the date format string.");
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"MMM d, yyyy 'at' h:mm a";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;
@@ -182,8 +211,10 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"MMMdyyyy" options:0 locale:locale];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"MMM d, yyyy";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;
@@ -196,8 +227,13 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String used to separate the date and time components of the date format string.");
+        NSString *tomorrow = NSLocalizedString(@"TOMORROW", @"String used to represent relative date string for tomorrow.");
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", tomorrow, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"'Tomorrow at' h:mm a";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;
@@ -210,8 +246,13 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"EEEE" options:0 locale:locale];
+        NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String used to separate the date and time components of the date format string.");
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"EEEE 'at' h:mm a";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;
@@ -224,8 +265,10 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *dateFormat = [NSDateFormatter dateFormatFromTemplate:@"EEEE" options:0 locale:locale];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"EEEE";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;
@@ -238,8 +281,13 @@
     static NSDateFormatter *formatter = nil;
     
     dispatch_block_t block = ^(void) {
+        NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
+        NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String used to separate the date and time components of the date format string.");
+        NSString *yesterday = NSLocalizedString(@"YESTERDAY", @"String used to represent relative date string for yesterday.");
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", yesterday, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
-        formatter.dateFormat = @"'Yesterday at' h:mm a";
+        [formatter setDateFormat:dateFormat];
     };
     
     static dispatch_once_t predicate = 0;

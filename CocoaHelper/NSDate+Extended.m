@@ -14,9 +14,11 @@ NSTimeInterval const TimeIntervalOfFiveDays = 432000.0f;
 NSTimeInterval const TimeIntervalOfFourDays = 345600.0f;
 NSTimeInterval const TimeIntervalOfOneDay = 86400.0f;
 NSTimeInterval const TimeIntervalOfOneHour = 3600.0f;
+NSTimeInterval const TimeIntervalOfOneMillisecond = 0.001f;
 NSTimeInterval const TimeIntervalOfOneMinute = 60.0f;
 NSTimeInterval const TimeIntervalOfOneSecond = 1.0f;
 NSTimeInterval const TimeIntervalOfOneWeek = 604800.0f;
+NSTimeInterval const TimeIntervalOfSevenDays = 604800.0f;
 NSTimeInterval const TimeIntervalOfSixDays = 518400.0f;
 NSTimeInterval const TimeIntervalOfThirtyDays = 2592000.0f;
 NSTimeInterval const TimeIntervalOfThreeDays = 259200.0f;
@@ -102,21 +104,23 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 - (NSDate *)beginningOfNextDay {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfDay];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:1];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
 
 - (NSDate *)beginningOfPreviousDay {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfDay];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:-1];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
@@ -132,41 +136,44 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 - (NSDate *)beginningOfWeekday:(NSInteger)weekday {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSInteger day = weekday - [self weekday];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:day];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
 
 - (NSDate *)endOfDay {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfDay];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:1];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
 
 - (NSDate *)endOfMonth {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfMonth];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setMonth:1];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
 
 - (NSDate *)endOfWeek {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfMonth];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setWeek:1];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
@@ -208,11 +215,12 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 - (NSDate *)noon {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [self beginningOfDay];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setHour:12];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }

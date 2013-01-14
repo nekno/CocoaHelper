@@ -9,62 +9,61 @@
 /* Begin PBXBuildFile section */
 		620D8FDA15CE073600790B35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D8FD915CE073600790B35 /* Foundation.framework */; };
 		620D902615CE0AFE00790B35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D902515CE0AFE00790B35 /* UIKit.framework */; };
-		6220F1651675B6B00088D966 /* NSArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1111675B60F0088D966 /* NSArray+Extended.m */; };
-		6220F1661675B6B00088D966 /* NSData+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1131675B60F0088D966 /* NSData+Extended.m */; };
-		6220F1671675B6B00088D966 /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1151675B60F0088D966 /* NSDate+Extended.m */; };
-		6220F1681675B6B00088D966 /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */; };
-		6220F1691675B6B00088D966 /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1191675B60F0088D966 /* NSDictionary+Extended.m */; };
-		6220F16A1675B6B00088D966 /* NSMutableArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */; };
-		6220F16B1675B6B00088D966 /* NSMutableSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */; };
-		6220F16C1675B6B00088D966 /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11F1675B60F0088D966 /* NSNumber+Extended.m */; };
-		6220F16D1675B6B00088D966 /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1211675B60F0088D966 /* NSObject+Extended.m */; };
-		6220F16E1675B6B00088D966 /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1231675B60F0088D966 /* NSSet+Extended.m */; };
-		6220F16F1675B6B00088D966 /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1251675B60F0088D966 /* NSString+Extended.m */; };
-		6220F1701675B6B00088D966 /* UIBarButtonItem+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */; };
-		6220F1711675B6B00088D966 /* UIButton+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12A1675B60F0088D966 /* UIButton+Extended.m */; };
-		6220F1721675B6B00088D966 /* UICollectionView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */; };
-		6220F1731675B6B00088D966 /* UIColorCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */; };
-		6220F1741675B6B00088D966 /* UIImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1301675B60F0088D966 /* UIImage+Extended.m */; };
-		6220F1751675B6B00088D966 /* UIImageView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1321675B60F0088D966 /* UIImageView+Extended.m */; };
-		6220F1761675B6B00088D966 /* UINavigationBar+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */; };
-		6220F1771675B6B00088D966 /* UIScreen+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1361675B60F0088D966 /* UIScreen+Extended.m */; };
-		6220F1781675B6B00088D966 /* UIScrollView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1381675B60F0088D966 /* UIScrollView+Extended.m */; };
-		6220F1791675B6B00088D966 /* UITableView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13A1675B60F0088D966 /* UITableView+Extended.m */; };
-		6220F17A1675B6B00088D966 /* UIView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13C1675B60F0088D966 /* UIView+Extended.m */; };
-		6220F17B1675B6B00088D966 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10E1675B60F0088D966 /* CHDebug.m */; };
-		6220F17C1675B6B00088D966 /* CHCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10C1675B60F0088D966 /* CHCrayonPalette.m */; };
-		6220F17D1675B6CB0088D966 /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1101675B60F0088D966 /* NSArray+Extended.h */; };
-		6220F17E1675B6CB0088D966 /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1121675B60F0088D966 /* NSData+Extended.h */; };
-		6220F17F1675B6CB0088D966 /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1141675B60F0088D966 /* NSDate+Extended.h */; };
-		6220F1801675B6CB0088D966 /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */; };
-		6220F1811675B6CB0088D966 /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1181675B60F0088D966 /* NSDictionary+Extended.h */; };
-		6220F1821675B6CB0088D966 /* NSMutableArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */; };
-		6220F1831675B6CB0088D966 /* NSMutableSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */; };
-		6220F1841675B6CB0088D966 /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11E1675B60F0088D966 /* NSNumber+Extended.h */; };
-		6220F1851675B6CB0088D966 /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1201675B60F0088D966 /* NSObject+Extended.h */; };
-		6220F1861675B6CB0088D966 /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1221675B60F0088D966 /* NSSet+Extended.h */; };
-		6220F1871675B6CB0088D966 /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1241675B60F0088D966 /* NSString+Extended.h */; };
-		6220F1881675B6CB0088D966 /* UIBarButtonItem+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */; };
-		6220F1891675B6CB0088D966 /* UIButton+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1291675B60F0088D966 /* UIButton+Extended.h */; };
-		6220F18A1675B6CB0088D966 /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */; };
-		6220F18B1675B6CB0088D966 /* UIColorCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */; };
-		6220F18C1675B6CB0088D966 /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12F1675B60F0088D966 /* UIImage+Extended.h */; };
-		6220F18D1675B6CB0088D966 /* UIImageView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1311675B60F0088D966 /* UIImageView+Extended.h */; };
-		6220F18E1675B6CB0088D966 /* UINavigationBar+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */; };
-		6220F18F1675B6CB0088D966 /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1351675B60F0088D966 /* UIScreen+Extended.h */; };
-		6220F1901675B6CB0088D966 /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1371675B60F0088D966 /* UIScrollView+Extended.h */; };
-		6220F1911675B6CB0088D966 /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1391675B60F0088D966 /* UITableView+Extended.h */; };
-		6220F1921675B6CB0088D966 /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F13B1675B60F0088D966 /* UIView+Extended.h */; };
-		6220F1931675B6CB0088D966 /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10D1675B60F0088D966 /* CHDebug.h */; };
-		6220F1941675B6CB0088D966 /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10B1675B60F0088D966 /* CHCrayonPalette.h */; };
-		6220F1951675B6CB0088D966 /* CocoaHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1261675B60F0088D966 /* CocoaHelper.h */; };
+		62145507169F20E800BBA5DE /* NSDateFormatterExtendedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62145506169F20E800BBA5DE /* NSDateFormatterExtendedTests.m */; };
 		624F7DD3169B6DCC00B18800 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D902515CE0AFE00790B35 /* UIKit.framework */; };
 		624F7DD4169B6DCC00B18800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D8FD915CE073600790B35 /* Foundation.framework */; };
-		624F7DDD169B6DCC00B18800 /* CocoaHelperLogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F7DDC169B6DCC00B18800 /* CocoaHelperLogicTests.m */; };
 		624F7DF1169B709500B18800 /* libCocoaHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D8FD615CE073600790B35 /* libCocoaHelper.a */; };
 		624F7E05169B759E00B18800 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624F7DE3169B6DE500B18800 /* SenTestingKit.framework */; };
 		624F7E12169B797E00B18800 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E8389E15E517B300EBC23C /* CoreGraphics.framework */; };
-		62500CAF169B22BA009FCBB6 /* Localizable.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 628B8D21169B228B000F978A /* Localizable.strings */; };
+		62B61F0B16A09F4E004C898B /* NSArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1111675B60F0088D966 /* NSArray+Extended.m */; };
+		62B61F0C16A09F4E004C898B /* NSData+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1131675B60F0088D966 /* NSData+Extended.m */; };
+		62B61F0D16A09F4E004C898B /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1151675B60F0088D966 /* NSDate+Extended.m */; };
+		62B61F0E16A09F4E004C898B /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */; };
+		62B61F0F16A09F4E004C898B /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1191675B60F0088D966 /* NSDictionary+Extended.m */; };
+		62B61F1016A09F4E004C898B /* NSMutableArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */; };
+		62B61F1116A09F4E004C898B /* NSMutableSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */; };
+		62B61F1216A09F4E004C898B /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11F1675B60F0088D966 /* NSNumber+Extended.m */; };
+		62B61F1316A09F4E004C898B /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1211675B60F0088D966 /* NSObject+Extended.m */; };
+		62B61F1416A09F4E004C898B /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1231675B60F0088D966 /* NSSet+Extended.m */; };
+		62B61F1516A09F4E004C898B /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1251675B60F0088D966 /* NSString+Extended.m */; };
+		62B61F1616A09F4E004C898B /* UIBarButtonItem+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */; };
+		62B61F1716A09F4E004C898B /* UIButton+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12A1675B60F0088D966 /* UIButton+Extended.m */; };
+		62B61F1816A09F4E004C898B /* UICollectionView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */; };
+		62B61F1916A09F4E004C898B /* UIImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1301675B60F0088D966 /* UIImage+Extended.m */; };
+		62B61F1A16A09F4E004C898B /* UIImageView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1321675B60F0088D966 /* UIImageView+Extended.m */; };
+		62B61F1B16A09F4E004C898B /* UINavigationBar+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */; };
+		62B61F1C16A09F4E004C898B /* UIScreen+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1361675B60F0088D966 /* UIScreen+Extended.m */; };
+		62B61F1D16A09F4E004C898B /* UIScrollView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1381675B60F0088D966 /* UIScrollView+Extended.m */; };
+		62B61F1E16A09F4E004C898B /* UITableView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13A1675B60F0088D966 /* UITableView+Extended.m */; };
+		62B61F1F16A09F4E004C898B /* UIView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13C1675B60F0088D966 /* UIView+Extended.m */; };
+		62B61F2016A09F4E004C898B /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10E1675B60F0088D966 /* CHDebug.m */; };
+		62B61F2116A09F4E004C898B /* CHCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F10C1675B60F0088D966 /* CHCrayonPalette.m */; };
+		62B61F2216A09F6D004C898B /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1101675B60F0088D966 /* NSArray+Extended.h */; };
+		62B61F2316A09F6D004C898B /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1121675B60F0088D966 /* NSData+Extended.h */; };
+		62B61F2416A09F6D004C898B /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1141675B60F0088D966 /* NSDate+Extended.h */; };
+		62B61F2516A09F6D004C898B /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */; };
+		62B61F2616A09F6D004C898B /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1181675B60F0088D966 /* NSDictionary+Extended.h */; };
+		62B61F2716A09F6D004C898B /* NSMutableArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */; };
+		62B61F2816A09F6D004C898B /* NSMutableSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */; };
+		62B61F2916A09F6D004C898B /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11E1675B60F0088D966 /* NSNumber+Extended.h */; };
+		62B61F2A16A09F6D004C898B /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1201675B60F0088D966 /* NSObject+Extended.h */; };
+		62B61F2B16A09F6D004C898B /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1221675B60F0088D966 /* NSSet+Extended.h */; };
+		62B61F2C16A09F6D004C898B /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1241675B60F0088D966 /* NSString+Extended.h */; };
+		62B61F2D16A09F6D004C898B /* UIBarButtonItem+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */; };
+		62B61F2E16A09F6D004C898B /* UIButton+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1291675B60F0088D966 /* UIButton+Extended.h */; };
+		62B61F2F16A09F6D004C898B /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */; };
+		62B61F3016A09F6D004C898B /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12F1675B60F0088D966 /* UIImage+Extended.h */; };
+		62B61F3116A09F6D004C898B /* UIImageView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1311675B60F0088D966 /* UIImageView+Extended.h */; };
+		62B61F3216A09F6D004C898B /* UINavigationBar+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */; };
+		62B61F3316A09F6D004C898B /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1351675B60F0088D966 /* UIScreen+Extended.h */; };
+		62B61F3416A09F6D004C898B /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1371675B60F0088D966 /* UIScrollView+Extended.h */; };
+		62B61F3516A09F6D004C898B /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1391675B60F0088D966 /* UITableView+Extended.h */; };
+		62B61F3616A09F6D004C898B /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F13B1675B60F0088D966 /* UIView+Extended.h */; };
+		62B61F3716A09F6D004C898B /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10D1675B60F0088D966 /* CHDebug.h */; };
+		62B61F3816A09F6D004C898B /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F10B1675B60F0088D966 /* CHCrayonPalette.h */; };
+		62B61F3916A09F6D004C898B /* CocoaHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1261675B60F0088D966 /* CocoaHelper.h */; };
+		62B61F3A16A09F6D004C898B /* Localizable.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 628B8D21169B228B000F978A /* Localizable.strings */; };
+		62B61F3F16A0A0B7004C898B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B61F3E16A0A0B7004C898B /* QuartzCore.framework */; };
 		62E8389F15E517B500EBC23C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E8389E15E517B300EBC23C /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,32 +84,31 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				62500CAF169B22BA009FCBB6 /* Localizable.strings in CopyFiles */,
-				6220F17D1675B6CB0088D966 /* NSArray+Extended.h in CopyFiles */,
-				6220F17E1675B6CB0088D966 /* NSData+Extended.h in CopyFiles */,
-				6220F17F1675B6CB0088D966 /* NSDate+Extended.h in CopyFiles */,
-				6220F1801675B6CB0088D966 /* NSDateFormatter+Extended.h in CopyFiles */,
-				6220F1811675B6CB0088D966 /* NSDictionary+Extended.h in CopyFiles */,
-				6220F1821675B6CB0088D966 /* NSMutableArray+Extended.h in CopyFiles */,
-				6220F1831675B6CB0088D966 /* NSMutableSet+Extended.h in CopyFiles */,
-				6220F1841675B6CB0088D966 /* NSNumber+Extended.h in CopyFiles */,
-				6220F1851675B6CB0088D966 /* NSObject+Extended.h in CopyFiles */,
-				6220F1861675B6CB0088D966 /* NSSet+Extended.h in CopyFiles */,
-				6220F1871675B6CB0088D966 /* NSString+Extended.h in CopyFiles */,
-				6220F1881675B6CB0088D966 /* UIBarButtonItem+Extended.h in CopyFiles */,
-				6220F1891675B6CB0088D966 /* UIButton+Extended.h in CopyFiles */,
-				6220F18A1675B6CB0088D966 /* UICollectionView+Extended.h in CopyFiles */,
-				6220F18B1675B6CB0088D966 /* UIColorCrayonPalette.h in CopyFiles */,
-				6220F18C1675B6CB0088D966 /* UIImage+Extended.h in CopyFiles */,
-				6220F18D1675B6CB0088D966 /* UIImageView+Extended.h in CopyFiles */,
-				6220F18E1675B6CB0088D966 /* UINavigationBar+Extended.h in CopyFiles */,
-				6220F18F1675B6CB0088D966 /* UIScreen+Extended.h in CopyFiles */,
-				6220F1901675B6CB0088D966 /* UIScrollView+Extended.h in CopyFiles */,
-				6220F1911675B6CB0088D966 /* UITableView+Extended.h in CopyFiles */,
-				6220F1921675B6CB0088D966 /* UIView+Extended.h in CopyFiles */,
-				6220F1931675B6CB0088D966 /* CHDebug.h in CopyFiles */,
-				6220F1941675B6CB0088D966 /* CHCrayonPalette.h in CopyFiles */,
-				6220F1951675B6CB0088D966 /* CocoaHelper.h in CopyFiles */,
+				62B61F2216A09F6D004C898B /* NSArray+Extended.h in CopyFiles */,
+				62B61F2316A09F6D004C898B /* NSData+Extended.h in CopyFiles */,
+				62B61F2416A09F6D004C898B /* NSDate+Extended.h in CopyFiles */,
+				62B61F2516A09F6D004C898B /* NSDateFormatter+Extended.h in CopyFiles */,
+				62B61F2616A09F6D004C898B /* NSDictionary+Extended.h in CopyFiles */,
+				62B61F2716A09F6D004C898B /* NSMutableArray+Extended.h in CopyFiles */,
+				62B61F2816A09F6D004C898B /* NSMutableSet+Extended.h in CopyFiles */,
+				62B61F2916A09F6D004C898B /* NSNumber+Extended.h in CopyFiles */,
+				62B61F2A16A09F6D004C898B /* NSObject+Extended.h in CopyFiles */,
+				62B61F2B16A09F6D004C898B /* NSSet+Extended.h in CopyFiles */,
+				62B61F2C16A09F6D004C898B /* NSString+Extended.h in CopyFiles */,
+				62B61F2D16A09F6D004C898B /* UIBarButtonItem+Extended.h in CopyFiles */,
+				62B61F2E16A09F6D004C898B /* UIButton+Extended.h in CopyFiles */,
+				62B61F2F16A09F6D004C898B /* UICollectionView+Extended.h in CopyFiles */,
+				62B61F3016A09F6D004C898B /* UIImage+Extended.h in CopyFiles */,
+				62B61F3116A09F6D004C898B /* UIImageView+Extended.h in CopyFiles */,
+				62B61F3216A09F6D004C898B /* UINavigationBar+Extended.h in CopyFiles */,
+				62B61F3316A09F6D004C898B /* UIScreen+Extended.h in CopyFiles */,
+				62B61F3416A09F6D004C898B /* UIScrollView+Extended.h in CopyFiles */,
+				62B61F3516A09F6D004C898B /* UITableView+Extended.h in CopyFiles */,
+				62B61F3616A09F6D004C898B /* UIView+Extended.h in CopyFiles */,
+				62B61F3716A09F6D004C898B /* CHDebug.h in CopyFiles */,
+				62B61F3816A09F6D004C898B /* CHCrayonPalette.h in CopyFiles */,
+				62B61F3916A09F6D004C898B /* CocoaHelper.h in CopyFiles */,
+				62B61F3A16A09F6D004C898B /* Localizable.strings in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +119,8 @@
 		620D8FD915CE073600790B35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		620D902515CE0AFE00790B35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		620D906815CE119200790B35 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		62145505169F20E800BBA5DE /* NSDateFormatterExtendedTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateFormatterExtendedTests.h; sourceTree = "<group>"; };
+		62145506169F20E800BBA5DE /* NSDateFormatterExtendedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateFormatterExtendedTests.m; sourceTree = "<group>"; };
 		6220F10B1675B60F0088D966 /* CHCrayonPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCrayonPalette.h; sourceTree = "<group>"; };
 		6220F10C1675B60F0088D966 /* CHCrayonPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCrayonPalette.m; sourceTree = "<group>"; };
 		6220F10D1675B60F0088D966 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDebug.h; sourceTree = "<group>"; };
@@ -154,8 +154,6 @@
 		6220F12A1675B60F0088D966 /* UIButton+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extended.m"; sourceTree = "<group>"; };
 		6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Extended.h"; sourceTree = "<group>"; };
 		6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Extended.m"; sourceTree = "<group>"; };
-		6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorCrayonPalette.h; sourceTree = "<group>"; };
-		6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorCrayonPalette.m; sourceTree = "<group>"; };
 		6220F12F1675B60F0088D966 /* UIImage+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extended.h"; sourceTree = "<group>"; };
 		6220F1301675B60F0088D966 /* UIImage+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extended.m"; sourceTree = "<group>"; };
 		6220F1311675B60F0088D966 /* UIImageView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extended.h"; sourceTree = "<group>"; };
@@ -174,11 +172,10 @@
 		6220F1641675B68F0088D966 /* LICENSE.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.markdown; sourceTree = SOURCE_ROOT; };
 		624F7DD0169B6DCC00B18800 /* CocoaHelperLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHelperLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F7DD7169B6DCC00B18800 /* CocoaHelperLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHelperLogicTests-Info.plist"; sourceTree = "<group>"; };
-		624F7DDB169B6DCC00B18800 /* CocoaHelperLogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaHelperLogicTests.h; sourceTree = "<group>"; };
-		624F7DDC169B6DCC00B18800 /* CocoaHelperLogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaHelperLogicTests.m; sourceTree = "<group>"; };
 		624F7DE3169B6DE500B18800 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		62500CB1169B2347009FCBB6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		628B8D20169B228B000F978A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62B61F3E16A0A0B7004C898B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		62E8389E15E517B300EBC23C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -199,6 +196,7 @@
 			files = (
 				624F7E12169B797E00B18800 /* CoreGraphics.framework in Frameworks */,
 				624F7DD4169B6DCC00B18800 /* Foundation.framework in Frameworks */,
+				62B61F3F16A0A0B7004C898B /* QuartzCore.framework in Frameworks */,
 				624F7E05169B759E00B18800 /* SenTestingKit.framework in Frameworks */,
 				624F7DD3169B6DCC00B18800 /* UIKit.framework in Frameworks */,
 				624F7DF1169B709500B18800 /* libCocoaHelper.a in Frameworks */,
@@ -232,8 +230,9 @@
 			children = (
 				62E8389E15E517B300EBC23C /* CoreGraphics.framework */,
 				620D8FD915CE073600790B35 /* Foundation.framework */,
-				620D902515CE0AFE00790B35 /* UIKit.framework */,
+				62B61F3E16A0A0B7004C898B /* QuartzCore.framework */,
 				624F7DE3169B6DE500B18800 /* SenTestingKit.framework */,
+				620D902515CE0AFE00790B35 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,8 +326,6 @@
 				6220F12A1675B60F0088D966 /* UIButton+Extended.m */,
 				6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */,
 				6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */,
-				6220F12D1675B60F0088D966 /* UIColorCrayonPalette.h */,
-				6220F12E1675B60F0088D966 /* UIColorCrayonPalette.m */,
 				6220F12F1675B60F0088D966 /* UIImage+Extended.h */,
 				6220F1301675B60F0088D966 /* UIImage+Extended.m */,
 				6220F1311675B60F0088D966 /* UIImageView+Extended.h */,
@@ -375,8 +372,8 @@
 		624F7DF4169B73CF00B18800 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				624F7DDB169B6DCC00B18800 /* CocoaHelperLogicTests.h */,
-				624F7DDC169B6DCC00B18800 /* CocoaHelperLogicTests.m */,
+				62145505169F20E800BBA5DE /* NSDateFormatterExtendedTests.h */,
+				62145506169F20E800BBA5DE /* NSDateFormatterExtendedTests.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -391,6 +388,7 @@
 				620D8FD215CE073600790B35 /* Sources */,
 				620D8FD315CE073600790B35 /* Frameworks */,
 				620D8FD415CE073600790B35 /* CopyFiles */,
+				623AF6AE16A0AF9A00BDD437 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -426,7 +424,7 @@
 		620D8FCD15CE073600790B35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = OH;
+				CLASSPREFIX = CH;
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Michael Reneer";
 			};
@@ -437,6 +435,7 @@
 			knownRegions = (
 				en,
 				de,
+				es,
 			);
 			mainGroup = 620D8FCB15CE073600790B35;
 			productRefGroup = 620D8FD715CE073600790B35 /* Products */;
@@ -450,6 +449,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		623AF6AE16A0AF9A00BDD437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		624F7DCD169B6DCC00B18800 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,30 +486,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6220F1651675B6B00088D966 /* NSArray+Extended.m in Sources */,
-				6220F1661675B6B00088D966 /* NSData+Extended.m in Sources */,
-				6220F1671675B6B00088D966 /* NSDate+Extended.m in Sources */,
-				6220F1681675B6B00088D966 /* NSDateFormatter+Extended.m in Sources */,
-				6220F1691675B6B00088D966 /* NSDictionary+Extended.m in Sources */,
-				6220F16A1675B6B00088D966 /* NSMutableArray+Extended.m in Sources */,
-				6220F16B1675B6B00088D966 /* NSMutableSet+Extended.m in Sources */,
-				6220F16C1675B6B00088D966 /* NSNumber+Extended.m in Sources */,
-				6220F16D1675B6B00088D966 /* NSObject+Extended.m in Sources */,
-				6220F16E1675B6B00088D966 /* NSSet+Extended.m in Sources */,
-				6220F16F1675B6B00088D966 /* NSString+Extended.m in Sources */,
-				6220F1701675B6B00088D966 /* UIBarButtonItem+Extended.m in Sources */,
-				6220F1711675B6B00088D966 /* UIButton+Extended.m in Sources */,
-				6220F1721675B6B00088D966 /* UICollectionView+Extended.m in Sources */,
-				6220F1731675B6B00088D966 /* UIColorCrayonPalette.m in Sources */,
-				6220F1741675B6B00088D966 /* UIImage+Extended.m in Sources */,
-				6220F1751675B6B00088D966 /* UIImageView+Extended.m in Sources */,
-				6220F1761675B6B00088D966 /* UINavigationBar+Extended.m in Sources */,
-				6220F1771675B6B00088D966 /* UIScreen+Extended.m in Sources */,
-				6220F1781675B6B00088D966 /* UIScrollView+Extended.m in Sources */,
-				6220F1791675B6B00088D966 /* UITableView+Extended.m in Sources */,
-				6220F17A1675B6B00088D966 /* UIView+Extended.m in Sources */,
-				6220F17B1675B6B00088D966 /* CHDebug.m in Sources */,
-				6220F17C1675B6B00088D966 /* CHCrayonPalette.m in Sources */,
+				62B61F0B16A09F4E004C898B /* NSArray+Extended.m in Sources */,
+				62B61F0C16A09F4E004C898B /* NSData+Extended.m in Sources */,
+				62B61F0D16A09F4E004C898B /* NSDate+Extended.m in Sources */,
+				62B61F0E16A09F4E004C898B /* NSDateFormatter+Extended.m in Sources */,
+				62B61F0F16A09F4E004C898B /* NSDictionary+Extended.m in Sources */,
+				62B61F1016A09F4E004C898B /* NSMutableArray+Extended.m in Sources */,
+				62B61F1116A09F4E004C898B /* NSMutableSet+Extended.m in Sources */,
+				62B61F1216A09F4E004C898B /* NSNumber+Extended.m in Sources */,
+				62B61F1316A09F4E004C898B /* NSObject+Extended.m in Sources */,
+				62B61F1416A09F4E004C898B /* NSSet+Extended.m in Sources */,
+				62B61F1516A09F4E004C898B /* NSString+Extended.m in Sources */,
+				62B61F1616A09F4E004C898B /* UIBarButtonItem+Extended.m in Sources */,
+				62B61F1716A09F4E004C898B /* UIButton+Extended.m in Sources */,
+				62B61F1816A09F4E004C898B /* UICollectionView+Extended.m in Sources */,
+				62B61F1916A09F4E004C898B /* UIImage+Extended.m in Sources */,
+				62B61F1A16A09F4E004C898B /* UIImageView+Extended.m in Sources */,
+				62B61F1B16A09F4E004C898B /* UINavigationBar+Extended.m in Sources */,
+				62B61F1C16A09F4E004C898B /* UIScreen+Extended.m in Sources */,
+				62B61F1D16A09F4E004C898B /* UIScrollView+Extended.m in Sources */,
+				62B61F1E16A09F4E004C898B /* UITableView+Extended.m in Sources */,
+				62B61F1F16A09F4E004C898B /* UIView+Extended.m in Sources */,
+				62B61F2016A09F4E004C898B /* CHDebug.m in Sources */,
+				62B61F2116A09F4E004C898B /* CHCrayonPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624F7DDD169B6DCC00B18800 /* CocoaHelperLogicTests.m in Sources */,
+				62145507169F20E800BBA5DE /* NSDateFormatterExtendedTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +627,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaHelper/CocoaHelper-Prefix.pch";
 				INFOPLIST_FILE = "CocoaHelperLogicTests/CocoaHelperLogicTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -637,6 +643,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaHelper/CocoaHelper-Prefix.pch";
 				INFOPLIST_FILE = "CocoaHelperLogicTests/CocoaHelperLogicTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -670,6 +677,7 @@
 				624F7DE0169B6DCC00B18800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
