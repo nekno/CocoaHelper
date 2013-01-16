@@ -259,8 +259,8 @@
 		620D903715CE0C2300790B35 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6265F5D416A65C1100B33ECC /* Localization */,
 				6220F1641675B68F0088D966 /* LICENSE.markdown */,
+				628B8D21169B228B000F978A /* Localizable.strings */,
 				620D906815CE119200790B35 /* README.markdown */,
 			);
 			name = Resources;
@@ -376,14 +376,6 @@
 				62145506169F20E800BBA5DE /* NSDateFormatterExtendedTests.m */,
 			);
 			name = Tests;
-			sourceTree = "<group>";
-		};
-		6265F5D416A65C1100B33ECC /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				628B8D21169B228B000F978A /* Localizable.strings */,
-			);
-			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
