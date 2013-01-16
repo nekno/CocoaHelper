@@ -38,12 +38,12 @@
             NSInteger hours = floor(interval / TimeIntervalOfOneHour * -1);
             
             if (hours == 1) {
-                NSString *hoursFormat = NSLocalizedString(@"HOUR_AGO", @"Format to represent the relative date and time string for a date equal to today and 1 hour ago.");
+                NSString *hoursFormat = NSLocalizedString(@"HOUR_AGO", @"Format for the relative date and time string for a date equal to today and 1 hour ago.");
                 
                 return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
             else {
-                NSString *hoursFormat = NSLocalizedString(@"HOURS_AGO", @"Format to represent the relative date and time string for a date equal to today and more than 1 hour ago.");
+                NSString *hoursFormat = NSLocalizedString(@"HOURS_AGO", @"Format for the relative date and time string for a date equal to today and more than 1 hour ago.");
                 
                 return [[NSString alloc] initWithFormat:hoursFormat, hours];
             }
@@ -52,12 +52,12 @@
             NSInteger minutes = floor(interval / TimeIntervalOfOneMinute * -1);
             
             if (minutes == 1) {
-                NSString *minutesFormat = NSLocalizedString(@"MINUTE_AGO", @"Format to represent the relative date and time string for a date equal to today and for 1 minute ago.");
+                NSString *minutesFormat = NSLocalizedString(@"MINUTE_AGO", @"Format for the relative date and time string for a date equal to today and for 1 minute ago.");
                 
                 return [[NSString alloc] initWithFormat:minutesFormat, minutes];
             }
             else {
-                NSString *minutesFormat = NSLocalizedString(@"MINUTES_AGO", @"Format to represent the relative date and time string for a date equal to today and for more than 1 minute ago.");
+                NSString *minutesFormat = NSLocalizedString(@"MINUTES_AGO", @"Format for the relative date and time string for a date equal to today and for more than 1 minute ago.");
                 
                 return [[NSString alloc] initWithFormat:minutesFormat, minutes];
             }
@@ -66,12 +66,12 @@
             NSInteger seconds = floor(interval / TimeIntervalOfOneSecond * -1);
             
             if (seconds == 1) {
-                NSString *secondsFormat = NSLocalizedString(@"SECOND_AGO", @"Format to represent the relative date and time string for a date equal to today and for 1 second ago.");
+                NSString *secondsFormat = NSLocalizedString(@"SECOND_AGO", @"Format for the relative date and time string for a date equal to today and for 1 second ago.");
                 
                 return [[NSString alloc] initWithFormat:secondsFormat, seconds];
             }
             else {
-                NSString *secondsFormat = NSLocalizedString(@"SECONDS_AGO", @"Format to represent the relative date and time string for a date equal to today and for more than 1 minute ago.");
+                NSString *secondsFormat = NSLocalizedString(@"SECONDS_AGO", @"Format for the relative date and time string for a date equal to today and for more than 1 minute ago.");
                 
                 return [[NSString alloc] initWithFormat:secondsFormat, seconds];
             }
@@ -80,12 +80,12 @@
             NSInteger hours = floor(interval / TimeIntervalOfOneHour);
             
             if (hours == 1) {
-                NSString *format = NSLocalizedString(@"HOUR_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for 1 hour from now.");
+                NSString *format = NSLocalizedString(@"HOUR_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for 1 hour from now.");
                 
                 return [[NSString alloc] initWithFormat:format, hours];
             }
             else {
-                NSString *format = NSLocalizedString(@"HOURS_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for more than 1 hour from now.");
+                NSString *format = NSLocalizedString(@"HOURS_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for more than 1 hour from now.");
                 
                 return [[NSString alloc] initWithFormat:format, hours];
             }
@@ -94,12 +94,12 @@
             NSInteger minutes = floor(interval / TimeIntervalOfOneMinute);
             
             if (minutes == 1) {
-                NSString *format = NSLocalizedString(@"MINUTE_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for 1 minute from now.");
+                NSString *format = NSLocalizedString(@"MINUTE_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for 1 minute from now.");
                 
                 return [[NSString alloc] initWithFormat:format, minutes];
             }
             else {
-                NSString *format = NSLocalizedString(@"MINUTES_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for more than 1 minute from now.");
+                NSString *format = NSLocalizedString(@"MINUTES_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for more than 1 minute from now.");
                 
                 return [[NSString alloc] initWithFormat:format, minutes];
             }
@@ -108,18 +108,18 @@
             NSInteger seconds = floor(interval / TimeIntervalOfOneSecond);
             
             if (seconds == 1) {
-                NSString *format = NSLocalizedString(@"SECOND_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for 1 second from now.");
+                NSString *format = NSLocalizedString(@"SECOND_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for 1 second from now.");
                 
                 return [[NSString alloc] initWithFormat:format, seconds];
             }
             else {
-                NSString *format = NSLocalizedString(@"SECONDS_FROM_NOW", @"Format to represent the relative date and time string for a date equal to today and for more than 1 second from now.");
+                NSString *format = NSLocalizedString(@"SECONDS_FROM_NOW", @"Format for the relative date and time string for a date equal to today and for more than 1 second from now.");
                 
                 return [[NSString alloc] initWithFormat:format, seconds];
             }
         }
         else {
-            return NSLocalizedString(@"NOW", @"String to represent the relative date and time string for now.");
+            return NSLocalizedString(@"NOW", @"String for the relative date and time string for now.");
         }
     }
     else if ([day isEqualToYesterday]) {
@@ -154,13 +154,13 @@
     NSDate *day = [date beginningOfDay];
     
     if ([day isEqualToToday]) {
-        return NSLocalizedString(@"TODAY", @"String to represent relative date string for today.");
+        return NSLocalizedString(@"TODAY", @"String for relative date string for today.");
     }
     else if ([day isEqualToYesterday]) {
-        return NSLocalizedString(@"YESTERDAY", @"String to represent relative date string for yesterday.");
+        return NSLocalizedString(@"YESTERDAY", @"String for relative date string for yesterday.");
     }
     else if ([day isEqualToTomorrow]) {
-        return NSLocalizedString(@"TOMORROW", @"String to represent relative date string for tomorrow.");
+        return NSLocalizedString(@"TOMORROW", @"String for relative date string for tomorrow.");
     }
     else {
         NSInteger interval = floor(abs([date timeIntervalSinceNow]));
@@ -195,7 +195,7 @@
         NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
         NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"MMMdyyyy" options:0 locale:locale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
-        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String to join the date and time components of the date format string.");
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
         NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
@@ -229,8 +229,8 @@
     dispatch_block_t block = ^(void) {
         NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
-        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String to join the date and time components of the date format string.");
-        NSString *tomorrow = NSLocalizedString(@"TOMORROW", @"String to represent relative date string for tomorrow.");
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
+        NSString *tomorrow = NSLocalizedString(@"TOMORROW", @"String for relative date string for tomorrow.");
         NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", tomorrow, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
@@ -249,7 +249,7 @@
         NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
         NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"EEEE" options:0 locale:locale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
-        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String to join the date and time components of the date format string.");
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
         NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
@@ -283,8 +283,8 @@
     dispatch_block_t block = ^(void) {
         NSLocale *locale = [NSLocale autoupdatingCurrentLocale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
-        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String to join the date and time components of the date format string.");
-        NSString *yesterday = NSLocalizedString(@"YESTERDAY", @"String to represent relative date string for yesterday.");
+        NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
+        NSString *yesterday = NSLocalizedString(@"YESTERDAY", @"String for relative date string for yesterday.");
         NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", yesterday, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
