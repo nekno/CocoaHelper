@@ -173,7 +173,7 @@
 		624F7DD0169B6DCC00B18800 /* CocoaHelperLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHelperLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F7DD7169B6DCC00B18800 /* CocoaHelperLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHelperLogicTests-Info.plist"; sourceTree = "<group>"; };
 		624F7DE3169B6DE500B18800 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		62500CB1169B2347009FCBB6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6265F5DB16A65CD600B33ECC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		628B8D20169B228B000F978A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62B61F3E16A0A0B7004C898B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		62E8389E15E517B300EBC23C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -535,7 +535,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				628B8D20169B228B000F978A /* en */,
-				62500CB1169B2347009FCBB6 /* de */,
+				6265F5DB16A65CD600B33ECC /* de */,
 			);
 			name = Localizable.strings;
 			path = CocoaHelper;
