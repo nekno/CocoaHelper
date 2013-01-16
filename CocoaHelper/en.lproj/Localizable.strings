@@ -6,43 +6,43 @@
 //  Copyright (c) 2013 Michael Reneer. All rights reserved.
 //
 
-/* Singular format used to represent the relative date and time strings for 1 hour ago. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 hour ago. */
 "HOUR_AGO" = "%d hour ago";
 
-/* Singular format used to represent the relative date and time strings for 1 hour from now. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 hour from now. */
 "HOUR_FROM_NOW" = "%d hour from now";
 
-/* Plural format used to represent the relative date and time strings for more than 1 hour ago. */
+/* Plural format used to represent the relative date and time string for a date equal to today and for more than 1 hour ago. */
 "HOURS_AGO" = "%d hours ago";
 
-/* Plural format used to represent the relative date and time strings for more than 1 hour from now. */
+/* Plural format used to represent the relative date and time string for a date equal to today and for more than 1 hour from now. */
 "HOURS_FROM_NOW" = "%d hours from now";
 
-/* Singular format used to represent the relative date and time strings for 1 minute ago. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 minute ago. */
 "MINUTE_AGO" = "%d minute ago";
 
-/* Singular format used to represent the relative date and time strings for 1 minute from now. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 minute from now. */
 "MINUTE_FROM_NOW" = "%d minute from now";
 
-/* Plural format used to represent the relative date and time strings for more than 1 minute ago. */
+/* Plural format used to represent the relative date and time string for a date equal to today and for more than 1 minute ago. */
 "MINUTES_AGO" = "%d minutes ago";
 
-/* Plural format used to represent the relative date and time strings for more than 1 minute from now. */
+/* Plural format used to represent the relative date and time string for a date equal to today and for more than 1 minute from now. */
 "MINUTES_FROM_NOW" = "%d minutes from now";
 
 /* String used to represent the relative date and time string for now. */
 "NOW" = "just now";
 
-/* Singular format used to represent the relative date and time strings for 1 second ago. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 second ago. */
 "SECOND_AGO" = "%d second ago";
 
-/* Singular format used to represent the relative date and time strings for 1 second from now. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for 1 second from now. */
 "SECOND_FROM_NOW" = "%d second from now";
 
-/* Plural format used to represent the relative date and time strings for more than 1 minute ago. */
+/* Plural format used to represent the relative date and time string for a date equal to today and for more than 1 minute ago. */
 "SECONDS_AGO" = "%d seconds ago";
 
-/* Singular format used to represent the relative date and time strings for more than 1 second from now. */
+/* Singular format used to represent the relative date and time string for a date equal to today and for more than 1 second from now. */
 "SECONDS_FROM_NOW" = "%d seconds from now";
 
 /* String used to represent relative date string for today. */
