@@ -42,12 +42,6 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
     return [date beginningOfWeek];
 }
 
-+ (id)beginningOfWeekday:(NSInteger)weekday {
-    NSDate *date = [NSDate now];
-    
-    return [date beginningOfWeekday:weekday];
-}
-
 + (id)endOfMonth {
     NSDate *date = [NSDate now];
     
@@ -71,15 +65,15 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 + (id)tomorrow {
-    NSDate *date = [NSDate now];
+    NSDate *date = [NSDate today];
     
-    return [date beginningOfNextDay];
+    return [date dateByAddingDays:1];
 }
 
 + (id)yesterday {
-    NSDate *date = [NSDate now];
+    NSDate *date = [NSDate today];
     
-    return [date beginningOfPreviousDay];
+    return [date dateByAddingDays:-1];
 }
 
 #pragma mark - Instance Methods
@@ -103,28 +97,6 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
     return [calendar dateFromComponents:components];
 }
 
-- (NSDate *)beginningOfNextDay {
-    NSDate *date = [self beginningOfDay];
-    
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:1];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
-    return [calendar dateByAddingComponents:components toDate:date options:0];
-}
-
-- (NSDate *)beginningOfPreviousDay {
-    NSDate *date = [self beginningOfDay];
-    
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:-1];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
-    return [calendar dateByAddingComponents:components toDate:date options:0];
-}
-
 - (NSDate *)beginningOfWeek {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
@@ -135,12 +107,11 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
     return [calendar dateFromComponents:components];
 }
 
-- (NSDate *)beginningOfWeekday:(NSInteger)weekday {
-    NSInteger day = weekday - [self weekday];
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:day];
-    
+- (NSDate *)dateByAddingDays:(NSInteger)days {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setDay:days];
     
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
@@ -148,12 +119,7 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 - (NSDate *)endOfDay {
     NSDate *date = [self beginningOfDay];
     
-    NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:1];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
-    return [calendar dateByAddingComponents:components toDate:date options:0];
+    return [date dateByAddingDays:1];
 }
 
 - (NSDate *)endOfMonth {
@@ -168,7 +134,7 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 - (NSDate *)endOfWeek {
-    NSDate *date = [self beginningOfMonth];
+    NSDate *date = [self beginningOfWeek];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setWeek:1];
@@ -176,24 +142,6 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
-}
-
-- (id)initWithTimeIntervalSinceToday:(NSTimeInterval)interval {
-    NSDate *date = [NSDate today];
-    
-    return [self initWithTimeInterval:interval sinceDate:date];
-}
-
-- (id)initWithTimeIntervalSinceTomorrow:(NSTimeInterval)interval {
-    NSDate *date = [NSDate tomorrow];
-    
-    return [self initWithTimeInterval:interval sinceDate:date];
-}
-
-- (id)initWithTimeIntervalSinceYesterday:(NSTimeInterval)interval {
-    NSDate *date = [NSDate yesterday];
-    
-    return [self initWithTimeInterval:interval sinceDate:date];
 }
 
 - (BOOL)isEqualToToday {
@@ -223,24 +171,6 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
-}
-
-- (NSTimeInterval)timeIntervalSinceToday {
-    NSDate *date = [NSDate today];
-    
-    return [self timeIntervalSinceDate:date];
-}
-
-- (NSTimeInterval)timeIntervalSinceTomorrow {
-    NSDate *date = [NSDate tomorrow];
-    
-    return [self timeIntervalSinceDate:date];
-}
-
-- (NSTimeInterval)timeIntervalSinceYesterday {
-    NSDate *date = [NSDate yesterday];
-    
-    return [self timeIntervalSinceDate:date];
 }
 
 - (NSInteger)weekday {

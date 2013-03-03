@@ -133,7 +133,8 @@
         return [formatter stringFromDate:date];
     }
     else {
-        NSInteger interval = floor(abs([day timeIntervalSinceToday]));
+        NSDate *today = [NSDate today];
+        NSInteger interval = floor(abs([day timeIntervalSinceDate:today]));
         
         if (interval < TimeIntervalOfSevenDays) {
             NSDateFormatter *formatter = [NSDateFormatter sharedWeekdayAndTimeDateFormatter];

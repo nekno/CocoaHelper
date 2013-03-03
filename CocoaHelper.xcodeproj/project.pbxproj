@@ -15,6 +15,7 @@
 		624F7DF1169B709500B18800 /* libCocoaHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 620D8FD615CE073600790B35 /* libCocoaHelper.a */; };
 		624F7E05169B759E00B18800 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624F7DE3169B6DE500B18800 /* SenTestingKit.framework */; };
 		624F7E12169B797E00B18800 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E8389E15E517B300EBC23C /* CoreGraphics.framework */; };
+		62576E4516B1A33800FD8D6B /* UIViewController+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62576E4416B1A33800FD8D6B /* UIViewController+Extended.m */; };
 		62B61F0B16A09F4E004C898B /* NSArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1111675B60F0088D966 /* NSArray+Extended.m */; };
 		62B61F0C16A09F4E004C898B /* NSData+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1131675B60F0088D966 /* NSData+Extended.m */; };
 		62B61F0D16A09F4E004C898B /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1151675B60F0088D966 /* NSDate+Extended.m */; };
@@ -173,6 +174,8 @@
 		624F7DD0169B6DCC00B18800 /* CocoaHelperLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHelperLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F7DD7169B6DCC00B18800 /* CocoaHelperLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHelperLogicTests-Info.plist"; sourceTree = "<group>"; };
 		624F7DE3169B6DE500B18800 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		62576E4316B1A33800FD8D6B /* UIViewController+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extended.h"; sourceTree = "<group>"; };
+		62576E4416B1A33800FD8D6B /* UIViewController+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extended.m"; sourceTree = "<group>"; };
 		6265F5DB16A65CD600B33ECC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		628B8D20169B228B000F978A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62B61F3E16A0A0B7004C898B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -340,6 +343,8 @@
 				6220F13A1675B60F0088D966 /* UITableView+Extended.m */,
 				6220F13B1675B60F0088D966 /* UIView+Extended.h */,
 				6220F13C1675B60F0088D966 /* UIView+Extended.m */,
+				62576E4316B1A33800FD8D6B /* UIViewController+Extended.h */,
+				62576E4416B1A33800FD8D6B /* UIViewController+Extended.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -509,6 +514,7 @@
 				62B61F1F16A09F4E004C898B /* UIView+Extended.m in Sources */,
 				62B61F2016A09F4E004C898B /* CHDebug.m in Sources */,
 				62B61F2116A09F4E004C898B /* CHCrayonPalette.m in Sources */,
+				62576E4516B1A33800FD8D6B /* UIViewController+Extended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

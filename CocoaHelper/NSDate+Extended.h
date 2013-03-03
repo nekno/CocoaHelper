@@ -30,7 +30,6 @@ extern NSTimeInterval const TimeIntervalOfTwoDays;
 
 + (id)beginningOfMonth;
 + (id)beginningOfWeek;
-+ (id)beginningOfWeekday:(NSInteger)weekday;
 + (id)endOfMonth;
 + (id)endOfWeek;
 + (id)now;
@@ -40,23 +39,15 @@ extern NSTimeInterval const TimeIntervalOfTwoDays;
 
 - (NSDate *)beginningOfDay;
 - (NSDate *)beginningOfMonth;
-- (NSDate *)beginningOfNextDay;
-- (NSDate *)beginningOfPreviousDay;
 - (NSDate *)beginningOfWeek;
-- (NSDate *)beginningOfWeekday:(NSInteger)weekday;
+- (NSDate *)dateByAddingDays:(NSInteger)days;
 - (NSDate *)endOfDay;
 - (NSDate *)endOfMonth;
 - (NSDate *)endOfWeek;
-- (id)initWithTimeIntervalSinceToday:(NSTimeInterval)interval;
-- (id)initWithTimeIntervalSinceTomorrow:(NSTimeInterval)interval;
-- (id)initWithTimeIntervalSinceYesterday:(NSTimeInterval)interval;
 - (BOOL)isEqualToToday;
 - (BOOL)isEqualToTomorrow;
 - (BOOL)isEqualToYesterday;
 - (NSDate *)noon;
-- (NSTimeInterval)timeIntervalSinceToday;
-- (NSTimeInterval)timeIntervalSinceTomorrow;
-- (NSTimeInterval)timeIntervalSinceYesterday;
 - (NSInteger)weekday;
 
 @end
