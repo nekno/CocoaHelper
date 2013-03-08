@@ -79,18 +79,16 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 #pragma mark - Instance Methods
 
 - (NSDate *)beginningOfDay {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSUInteger units = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:units fromDate:self];
     
     return [calendar dateFromComponents:components];
 }
 
 - (NSDate *)beginningOfMonth {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSUInteger units = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:units fromDate:self];
     [components setDay:1];
     
@@ -98,9 +96,8 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 }
 
 - (NSDate *)beginningOfWeek {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSUInteger units = (NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit);
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:units fromDate:self];
     [components setWeekday:1];
     
@@ -109,7 +106,6 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 
 - (NSDate *)dateByAddingDays:(NSInteger)days {
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setDay:days];
     
@@ -125,10 +121,9 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 - (NSDate *)endOfMonth {
     NSDate *date = [self beginningOfMonth];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setMonth:1];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
@@ -136,10 +131,9 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 - (NSDate *)endOfWeek {
     NSDate *date = [self beginningOfWeek];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setWeek:1];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
@@ -165,18 +159,16 @@ NSTimeInterval const TimeIntervalOfTwoDays = 172800.0f;
 - (NSDate *)noon {
     NSDate *date = [self beginningOfDay];
     
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setHour:12];
-    
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     return [calendar dateByAddingComponents:components toDate:date options:0];
 }
 
 - (NSInteger)weekday {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    
     NSUInteger units = NSWeekdayCalendarUnit;
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:units fromDate:self];
     
 	return [components weekday];
