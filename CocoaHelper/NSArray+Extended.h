@@ -13,7 +13,6 @@
 
 @interface NSArray (Extended)
 
-- (NSArray *)arrayByRemovingObject:(id)object;
 - (id)firstObject;
 - (BOOL)isEmptyOrNil;
 

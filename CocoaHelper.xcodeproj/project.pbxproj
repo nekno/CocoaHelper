@@ -21,18 +21,12 @@
 		62B61F0D16A09F4E004C898B /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1151675B60F0088D966 /* NSDate+Extended.m */; };
 		62B61F0E16A09F4E004C898B /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */; };
 		62B61F0F16A09F4E004C898B /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1191675B60F0088D966 /* NSDictionary+Extended.m */; };
-		62B61F1016A09F4E004C898B /* NSMutableArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */; };
-		62B61F1116A09F4E004C898B /* NSMutableSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */; };
 		62B61F1216A09F4E004C898B /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F11F1675B60F0088D966 /* NSNumber+Extended.m */; };
 		62B61F1316A09F4E004C898B /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1211675B60F0088D966 /* NSObject+Extended.m */; };
 		62B61F1416A09F4E004C898B /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1231675B60F0088D966 /* NSSet+Extended.m */; };
 		62B61F1516A09F4E004C898B /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1251675B60F0088D966 /* NSString+Extended.m */; };
-		62B61F1616A09F4E004C898B /* UIBarButtonItem+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */; };
-		62B61F1716A09F4E004C898B /* UIButton+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12A1675B60F0088D966 /* UIButton+Extended.m */; };
 		62B61F1816A09F4E004C898B /* UICollectionView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */; };
 		62B61F1916A09F4E004C898B /* UIImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1301675B60F0088D966 /* UIImage+Extended.m */; };
-		62B61F1A16A09F4E004C898B /* UIImageView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1321675B60F0088D966 /* UIImageView+Extended.m */; };
-		62B61F1B16A09F4E004C898B /* UINavigationBar+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */; };
 		62B61F1C16A09F4E004C898B /* UIScreen+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1361675B60F0088D966 /* UIScreen+Extended.m */; };
 		62B61F1D16A09F4E004C898B /* UIScrollView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F1381675B60F0088D966 /* UIScrollView+Extended.m */; };
 		62B61F1E16A09F4E004C898B /* UITableView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 6220F13A1675B60F0088D966 /* UITableView+Extended.m */; };
@@ -44,18 +38,12 @@
 		62B61F2416A09F6D004C898B /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1141675B60F0088D966 /* NSDate+Extended.h */; };
 		62B61F2516A09F6D004C898B /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1161675B60F0088D966 /* NSDateFormatter+Extended.h */; };
 		62B61F2616A09F6D004C898B /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1181675B60F0088D966 /* NSDictionary+Extended.h */; };
-		62B61F2716A09F6D004C898B /* NSMutableArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */; };
-		62B61F2816A09F6D004C898B /* NSMutableSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */; };
 		62B61F2916A09F6D004C898B /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F11E1675B60F0088D966 /* NSNumber+Extended.h */; };
 		62B61F2A16A09F6D004C898B /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1201675B60F0088D966 /* NSObject+Extended.h */; };
 		62B61F2B16A09F6D004C898B /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1221675B60F0088D966 /* NSSet+Extended.h */; };
 		62B61F2C16A09F6D004C898B /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1241675B60F0088D966 /* NSString+Extended.h */; };
-		62B61F2D16A09F6D004C898B /* UIBarButtonItem+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */; };
-		62B61F2E16A09F6D004C898B /* UIButton+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1291675B60F0088D966 /* UIButton+Extended.h */; };
 		62B61F2F16A09F6D004C898B /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */; };
 		62B61F3016A09F6D004C898B /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F12F1675B60F0088D966 /* UIImage+Extended.h */; };
-		62B61F3116A09F6D004C898B /* UIImageView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1311675B60F0088D966 /* UIImageView+Extended.h */; };
-		62B61F3216A09F6D004C898B /* UINavigationBar+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */; };
 		62B61F3316A09F6D004C898B /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1351675B60F0088D966 /* UIScreen+Extended.h */; };
 		62B61F3416A09F6D004C898B /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1371675B60F0088D966 /* UIScrollView+Extended.h */; };
 		62B61F3516A09F6D004C898B /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6220F1391675B60F0088D966 /* UITableView+Extended.h */; };
@@ -90,18 +78,12 @@
 				62B61F2416A09F6D004C898B /* NSDate+Extended.h in CopyFiles */,
 				62B61F2516A09F6D004C898B /* NSDateFormatter+Extended.h in CopyFiles */,
 				62B61F2616A09F6D004C898B /* NSDictionary+Extended.h in CopyFiles */,
-				62B61F2716A09F6D004C898B /* NSMutableArray+Extended.h in CopyFiles */,
-				62B61F2816A09F6D004C898B /* NSMutableSet+Extended.h in CopyFiles */,
 				62B61F2916A09F6D004C898B /* NSNumber+Extended.h in CopyFiles */,
 				62B61F2A16A09F6D004C898B /* NSObject+Extended.h in CopyFiles */,
 				62B61F2B16A09F6D004C898B /* NSSet+Extended.h in CopyFiles */,
 				62B61F2C16A09F6D004C898B /* NSString+Extended.h in CopyFiles */,
-				62B61F2D16A09F6D004C898B /* UIBarButtonItem+Extended.h in CopyFiles */,
-				62B61F2E16A09F6D004C898B /* UIButton+Extended.h in CopyFiles */,
 				62B61F2F16A09F6D004C898B /* UICollectionView+Extended.h in CopyFiles */,
 				62B61F3016A09F6D004C898B /* UIImage+Extended.h in CopyFiles */,
-				62B61F3116A09F6D004C898B /* UIImageView+Extended.h in CopyFiles */,
-				62B61F3216A09F6D004C898B /* UINavigationBar+Extended.h in CopyFiles */,
 				62B61F3316A09F6D004C898B /* UIScreen+Extended.h in CopyFiles */,
 				62B61F3416A09F6D004C898B /* UIScrollView+Extended.h in CopyFiles */,
 				62B61F3516A09F6D004C898B /* UITableView+Extended.h in CopyFiles */,
@@ -136,10 +118,6 @@
 		6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Extended.m"; sourceTree = "<group>"; };
 		6220F1181675B60F0088D966 /* NSDictionary+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extended.h"; sourceTree = "<group>"; };
 		6220F1191675B60F0088D966 /* NSDictionary+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extended.m"; sourceTree = "<group>"; };
-		6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extended.h"; sourceTree = "<group>"; };
-		6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extended.m"; sourceTree = "<group>"; };
-		6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+Extended.h"; sourceTree = "<group>"; };
-		6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Extended.m"; sourceTree = "<group>"; };
 		6220F11E1675B60F0088D966 /* NSNumber+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Extended.h"; sourceTree = "<group>"; };
 		6220F11F1675B60F0088D966 /* NSNumber+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Extended.m"; sourceTree = "<group>"; };
 		6220F1201675B60F0088D966 /* NSObject+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extended.h"; sourceTree = "<group>"; };
@@ -149,18 +127,10 @@
 		6220F1241675B60F0088D966 /* NSString+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extended.h"; sourceTree = "<group>"; };
 		6220F1251675B60F0088D966 /* NSString+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extended.m"; sourceTree = "<group>"; };
 		6220F1261675B60F0088D966 /* CocoaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHelper.h; sourceTree = "<group>"; };
-		6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extended.h"; sourceTree = "<group>"; };
-		6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extended.m"; sourceTree = "<group>"; };
-		6220F1291675B60F0088D966 /* UIButton+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extended.h"; sourceTree = "<group>"; };
-		6220F12A1675B60F0088D966 /* UIButton+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extended.m"; sourceTree = "<group>"; };
 		6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Extended.h"; sourceTree = "<group>"; };
 		6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Extended.m"; sourceTree = "<group>"; };
 		6220F12F1675B60F0088D966 /* UIImage+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extended.h"; sourceTree = "<group>"; };
 		6220F1301675B60F0088D966 /* UIImage+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extended.m"; sourceTree = "<group>"; };
-		6220F1311675B60F0088D966 /* UIImageView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extended.h"; sourceTree = "<group>"; };
-		6220F1321675B60F0088D966 /* UIImageView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extended.m"; sourceTree = "<group>"; };
-		6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extended.h"; sourceTree = "<group>"; };
-		6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extended.m"; sourceTree = "<group>"; };
 		6220F1351675B60F0088D966 /* UIScreen+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Extended.h"; sourceTree = "<group>"; };
 		6220F1361675B60F0088D966 /* UIScreen+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Extended.m"; sourceTree = "<group>"; };
 		6220F1371675B60F0088D966 /* UIScrollView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extended.h"; sourceTree = "<group>"; };
@@ -311,10 +281,6 @@
 				6220F1171675B60F0088D966 /* NSDateFormatter+Extended.m */,
 				6220F1181675B60F0088D966 /* NSDictionary+Extended.h */,
 				6220F1191675B60F0088D966 /* NSDictionary+Extended.m */,
-				6220F11A1675B60F0088D966 /* NSMutableArray+Extended.h */,
-				6220F11B1675B60F0088D966 /* NSMutableArray+Extended.m */,
-				6220F11C1675B60F0088D966 /* NSMutableSet+Extended.h */,
-				6220F11D1675B60F0088D966 /* NSMutableSet+Extended.m */,
 				6220F11E1675B60F0088D966 /* NSNumber+Extended.h */,
 				6220F11F1675B60F0088D966 /* NSNumber+Extended.m */,
 				6220F1201675B60F0088D966 /* NSObject+Extended.h */,
@@ -323,18 +289,10 @@
 				6220F1231675B60F0088D966 /* NSSet+Extended.m */,
 				6220F1241675B60F0088D966 /* NSString+Extended.h */,
 				6220F1251675B60F0088D966 /* NSString+Extended.m */,
-				6220F1271675B60F0088D966 /* UIBarButtonItem+Extended.h */,
-				6220F1281675B60F0088D966 /* UIBarButtonItem+Extended.m */,
-				6220F1291675B60F0088D966 /* UIButton+Extended.h */,
-				6220F12A1675B60F0088D966 /* UIButton+Extended.m */,
 				6220F12B1675B60F0088D966 /* UICollectionView+Extended.h */,
 				6220F12C1675B60F0088D966 /* UICollectionView+Extended.m */,
 				6220F12F1675B60F0088D966 /* UIImage+Extended.h */,
 				6220F1301675B60F0088D966 /* UIImage+Extended.m */,
-				6220F1311675B60F0088D966 /* UIImageView+Extended.h */,
-				6220F1321675B60F0088D966 /* UIImageView+Extended.m */,
-				6220F1331675B60F0088D966 /* UINavigationBar+Extended.h */,
-				6220F1341675B60F0088D966 /* UINavigationBar+Extended.m */,
 				6220F1351675B60F0088D966 /* UIScreen+Extended.h */,
 				6220F1361675B60F0088D966 /* UIScreen+Extended.m */,
 				6220F1371675B60F0088D966 /* UIScrollView+Extended.h */,
@@ -496,18 +454,12 @@
 				62B61F0D16A09F4E004C898B /* NSDate+Extended.m in Sources */,
 				62B61F0E16A09F4E004C898B /* NSDateFormatter+Extended.m in Sources */,
 				62B61F0F16A09F4E004C898B /* NSDictionary+Extended.m in Sources */,
-				62B61F1016A09F4E004C898B /* NSMutableArray+Extended.m in Sources */,
-				62B61F1116A09F4E004C898B /* NSMutableSet+Extended.m in Sources */,
 				62B61F1216A09F4E004C898B /* NSNumber+Extended.m in Sources */,
 				62B61F1316A09F4E004C898B /* NSObject+Extended.m in Sources */,
 				62B61F1416A09F4E004C898B /* NSSet+Extended.m in Sources */,
 				62B61F1516A09F4E004C898B /* NSString+Extended.m in Sources */,
-				62B61F1616A09F4E004C898B /* UIBarButtonItem+Extended.m in Sources */,
-				62B61F1716A09F4E004C898B /* UIButton+Extended.m in Sources */,
 				62B61F1816A09F4E004C898B /* UICollectionView+Extended.m in Sources */,
 				62B61F1916A09F4E004C898B /* UIImage+Extended.m in Sources */,
-				62B61F1A16A09F4E004C898B /* UIImageView+Extended.m in Sources */,
-				62B61F1B16A09F4E004C898B /* UINavigationBar+Extended.m in Sources */,
 				62B61F1C16A09F4E004C898B /* UIScreen+Extended.m in Sources */,
 				62B61F1D16A09F4E004C898B /* UIScrollView+Extended.m in Sources */,
 				62B61F1E16A09F4E004C898B /* UITableView+Extended.m in Sources */,

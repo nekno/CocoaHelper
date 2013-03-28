@@ -13,22 +13,17 @@
 #import "NSDate+Extended.h"
 #import "NSDateFormatter+Extended.h"
 #import "NSDictionary+Extended.h"
-#import "NSMutableArray+Extended.h"
-#import "NSMutableSet+Extended.h"
 #import "NSNumber+Extended.h"
 #import "NSObject+Extended.h"
 #import "NSSet+Extended.h"
 #import "NSString+Extended.h"
-#import "UIBarButtonItem+Extended.h"
-#import "UIButton+Extended.h"
 #import "UICollectionView+Extended.h"
 #import "UIImage+Extended.h"
-#import "UIImageView+Extended.h"
-#import "UINavigationBar+Extended.h"
 #import "UIScreen+Extended.h"
 #import "UIScrollView+Extended.h"
 #import "UITableView+Extended.h"
 #import "UIView+Extended.h"
+#import "UIViewController+Extended.h"
 
 #pragma mark - Constants
 

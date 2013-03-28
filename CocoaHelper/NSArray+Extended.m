@@ -15,13 +15,6 @@
 
 #pragma mark - Instance Methods
 
-- (NSArray *)arrayByRemovingObject:(id)anObject {
-    NSMutableArray *array = [self mutableCopy];
-    [array removeObject:anObject];
-    
-    return array;
-}
-
 - (id)firstObject {
     
     if ([self count] != 0) {
