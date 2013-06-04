@@ -179,6 +179,7 @@
 			children = (
 				62735DE9175DA24F007A7AA4 /* CocoaHelper-OSX-Info.plist */,
 				62735DED175DA24F007A7AA4 /* CocoaHelper-OSX-Prefix.pch */,
+				62735DEA175DA24F007A7AA4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,7 +230,6 @@
 		62735F2D175DA65F007A7AA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				62735DEA175DA24F007A7AA4 /* InfoPlist.strings */,
 				62735F38175DA731007A7AA4 /* Localizable.strings */,
 			);
 			name = Resources;
