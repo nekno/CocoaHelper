@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark - Constants
+#pragma mark - Functions
 
 extern void CHDebugLog(NSString *format, ...);

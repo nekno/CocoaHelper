@@ -8,7 +8,7 @@
 
 #import "CHDebug.h"
 
-#pragma mark - Constants
+#pragma mark - Functions
 
 void CHDebugLog(NSString *format, ...) {
 #ifdef DEBUG

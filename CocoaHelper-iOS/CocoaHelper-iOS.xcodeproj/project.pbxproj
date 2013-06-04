@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		621FF1B0175DB04700709C36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */; };
+		621FF1B3175DB04D00709C36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8E175DAC89007A7AA4 /* QuartzCore.framework */; };
+		621FF1B5175DB05000709C36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8C175DAC83007A7AA4 /* UIKit.framework */; };
+		62735E1B175DA26A007A7AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E1A175DA26A007A7AA4 /* Foundation.framework */; };
+		62735E2A175DA26B007A7AA4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E29175DA26B007A7AA4 /* SenTestingKit.framework */; };
+		62735E2D175DA26B007A7AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E1A175DA26A007A7AA4 /* Foundation.framework */; };
+		62735E30175DA26B007A7AA4 /* libCocoaHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E17175DA26A007A7AA4 /* libCocoaHelper.a */; };
+		62735E36175DA26B007A7AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62735E34175DA26B007A7AA4 /* InfoPlist.strings */; };
+		62735E64175DA33E007A7AA4 /* NSArray+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E45175DA33E007A7AA4 /* NSArray+Extended.m */; };
+		62735E65175DA33E007A7AA4 /* NSData+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E47175DA33E007A7AA4 /* NSData+Extended.m */; };
+		62735E66175DA33E007A7AA4 /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E49175DA33E007A7AA4 /* NSDate+Extended.m */; };
+		62735E67175DA33E007A7AA4 /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */; };
+		62735E68175DA33E007A7AA4 /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */; };
+		62735E69175DA33E007A7AA4 /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */; };
+		62735E6A175DA33E007A7AA4 /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E51175DA33E007A7AA4 /* NSObject+Extended.m */; };
+		62735E6B175DA33E007A7AA4 /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E53175DA33E007A7AA4 /* NSSet+Extended.m */; };
+		62735E6C175DA33E007A7AA4 /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E55175DA33E007A7AA4 /* NSString+Extended.m */; };
+		62735E6D175DA33E007A7AA4 /* UICollectionView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E57175DA33E007A7AA4 /* UICollectionView+Extended.m */; };
+		62735E6E175DA33E007A7AA4 /* UIImage+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E59175DA33E007A7AA4 /* UIImage+Extended.m */; };
+		62735E6F175DA33E007A7AA4 /* UIScreen+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E5B175DA33E007A7AA4 /* UIScreen+Extended.m */; };
+		62735E70175DA33E007A7AA4 /* UIScrollView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E5D175DA33E007A7AA4 /* UIScrollView+Extended.m */; };
+		62735E71175DA33E007A7AA4 /* UITableView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E5F175DA33E007A7AA4 /* UITableView+Extended.m */; };
+		62735E72175DA33E007A7AA4 /* UIView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E61175DA33E007A7AA4 /* UIView+Extended.m */; };
+		62735E73175DA33E007A7AA4 /* UIViewController+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E63175DA33E007A7AA4 /* UIViewController+Extended.m */; };
+		62735EAD175DA41B007A7AA4 /* CHCrayonPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735EAC175DA41B007A7AA4 /* CHCrayonPalette.m */; };
+		62735EB2175DA489007A7AA4 /* NSDateFormatterExtendedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735EB1175DA489007A7AA4 /* NSDateFormatterExtendedTests.m */; };
+		62735F8B175DAC7B007A7AA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */; };
+		62735F8D175DAC83007A7AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8C175DAC83007A7AA4 /* UIKit.framework */; };
+		62735F8F175DAC89007A7AA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8E175DAC89007A7AA4 /* QuartzCore.framework */; };
+		62735F90175DAD0A007A7AA4 /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E44175DA33E007A7AA4 /* NSArray+Extended.h */; };
+		62735F91175DAD0A007A7AA4 /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E46175DA33E007A7AA4 /* NSData+Extended.h */; };
+		62735F92175DAD0A007A7AA4 /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E48175DA33E007A7AA4 /* NSDate+Extended.h */; };
+		62735F93175DAD0A007A7AA4 /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4A175DA33E007A7AA4 /* NSDateFormatter+Extended.h */; };
+		62735F94175DAD0A007A7AA4 /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */; };
+		62735F95175DAD0A007A7AA4 /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */; };
+		62735F96175DAD0A007A7AA4 /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E50175DA33E007A7AA4 /* NSObject+Extended.h */; };
+		62735F97175DAD0A007A7AA4 /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E52175DA33E007A7AA4 /* NSSet+Extended.h */; };
+		62735F98175DAD0A007A7AA4 /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E54175DA33E007A7AA4 /* NSString+Extended.h */; };
+		62735F99175DAD0A007A7AA4 /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E56175DA33E007A7AA4 /* UICollectionView+Extended.h */; };
+		62735F9A175DAD0A007A7AA4 /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E58175DA33E007A7AA4 /* UIImage+Extended.h */; };
+		62735F9B175DAD0A007A7AA4 /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5A175DA33E007A7AA4 /* UIScreen+Extended.h */; };
+		62735F9C175DAD0A007A7AA4 /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5C175DA33E007A7AA4 /* UIScrollView+Extended.h */; };
+		62735F9D175DAD0A007A7AA4 /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5E175DA33E007A7AA4 /* UITableView+Extended.h */; };
+		62735F9E175DAD0A007A7AA4 /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E60175DA33E007A7AA4 /* UIView+Extended.h */; };
+		62735F9F175DAD0A007A7AA4 /* UIViewController+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E62175DA33E007A7AA4 /* UIViewController+Extended.h */; };
+		62735FA9175DADD0007A7AA4 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735FA8175DADD0007A7AA4 /* CHDebug.m */; };
+		62735FAA175DAE0F007A7AA4 /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735FA7175DADD0007A7AA4 /* CHDebug.h */; };
+		62735FAB175DAE16007A7AA4 /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735EAB175DA41B007A7AA4 /* CHCrayonPalette.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62735E2E175DA26B007A7AA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62735E0F175DA26A007A7AA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62735E16175DA26A007A7AA4;
+			remoteInfo = "CocoaHelper-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		62735E15175DA26A007A7AA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				62735FAB175DAE16007A7AA4 /* CHCrayonPalette.h in CopyFiles */,
+				62735FAA175DAE0F007A7AA4 /* CHDebug.h in CopyFiles */,
+				62735F90175DAD0A007A7AA4 /* NSArray+Extended.h in CopyFiles */,
+				62735F91175DAD0A007A7AA4 /* NSData+Extended.h in CopyFiles */,
+				62735F92175DAD0A007A7AA4 /* NSDate+Extended.h in CopyFiles */,
+				62735F93175DAD0A007A7AA4 /* NSDateFormatter+Extended.h in CopyFiles */,
+				62735F94175DAD0A007A7AA4 /* NSDictionary+Extended.h in CopyFiles */,
+				62735F95175DAD0A007A7AA4 /* NSNumber+Extended.h in CopyFiles */,
+				62735F96175DAD0A007A7AA4 /* NSObject+Extended.h in CopyFiles */,
+				62735F97175DAD0A007A7AA4 /* NSSet+Extended.h in CopyFiles */,
+				62735F98175DAD0A007A7AA4 /* NSString+Extended.h in CopyFiles */,
+				62735F99175DAD0A007A7AA4 /* UICollectionView+Extended.h in CopyFiles */,
+				62735F9A175DAD0A007A7AA4 /* UIImage+Extended.h in CopyFiles */,
+				62735F9B175DAD0A007A7AA4 /* UIScreen+Extended.h in CopyFiles */,
+				62735F9C175DAD0A007A7AA4 /* UIScrollView+Extended.h in CopyFiles */,
+				62735F9D175DAD0A007A7AA4 /* UITableView+Extended.h in CopyFiles */,
+				62735F9E175DAD0A007A7AA4 /* UIView+Extended.h in CopyFiles */,
+				62735F9F175DAD0A007A7AA4 /* UIViewController+Extended.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		62735E17175DA26A007A7AA4 /* libCocoaHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		62735E1A175DA26A007A7AA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62735E1E175DA26A007A7AA4 /* CocoaHelper-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaHelper-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		62735E28175DA26B007A7AA4 /* CocoaHelper-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaHelper-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62735E29175DA26B007A7AA4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		62735E33175DA26B007A7AA4 /* CocoaHelper-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaHelper-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		62735E35175DA26B007A7AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		62735E44175DA33E007A7AA4 /* NSArray+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Extended.h"; path = "../../CocoaHelper/NSArray+Extended.h"; sourceTree = "<group>"; };
+		62735E45175DA33E007A7AA4 /* NSArray+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Extended.m"; path = "../../CocoaHelper/NSArray+Extended.m"; sourceTree = "<group>"; };
+		62735E46175DA33E007A7AA4 /* NSData+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Extended.h"; path = "../../CocoaHelper/NSData+Extended.h"; sourceTree = "<group>"; };
+		62735E47175DA33E007A7AA4 /* NSData+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Extended.m"; path = "../../CocoaHelper/NSData+Extended.m"; sourceTree = "<group>"; };
+		62735E48175DA33E007A7AA4 /* NSDate+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extended.h"; path = "../../CocoaHelper/NSDate+Extended.h"; sourceTree = "<group>"; };
+		62735E49175DA33E007A7AA4 /* NSDate+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extended.m"; path = "../../CocoaHelper/NSDate+Extended.m"; sourceTree = "<group>"; };
+		62735E4A175DA33E007A7AA4 /* NSDateFormatter+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+Extended.h"; path = "../../CocoaHelper/NSDateFormatter+Extended.h"; sourceTree = "<group>"; };
+		62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+Extended.m"; path = "../../CocoaHelper/NSDateFormatter+Extended.m"; sourceTree = "<group>"; };
+		62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extended.h"; path = "../../CocoaHelper/NSDictionary+Extended.h"; sourceTree = "<group>"; };
+		62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Extended.m"; path = "../../CocoaHelper/NSDictionary+Extended.m"; sourceTree = "<group>"; };
+		62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Extended.h"; path = "../../CocoaHelper/NSNumber+Extended.h"; sourceTree = "<group>"; };
+		62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Extended.m"; path = "../../CocoaHelper/NSNumber+Extended.m"; sourceTree = "<group>"; };
+		62735E50175DA33E007A7AA4 /* NSObject+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extended.h"; path = "../../CocoaHelper/NSObject+Extended.h"; sourceTree = "<group>"; };
+		62735E51175DA33E007A7AA4 /* NSObject+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extended.m"; path = "../../CocoaHelper/NSObject+Extended.m"; sourceTree = "<group>"; };
+		62735E52175DA33E007A7AA4 /* NSSet+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+Extended.h"; path = "../../CocoaHelper/NSSet+Extended.h"; sourceTree = "<group>"; };
+		62735E53175DA33E007A7AA4 /* NSSet+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Extended.m"; path = "../../CocoaHelper/NSSet+Extended.m"; sourceTree = "<group>"; };
+		62735E54175DA33E007A7AA4 /* NSString+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Extended.h"; path = "../../CocoaHelper/NSString+Extended.h"; sourceTree = "<group>"; };
+		62735E55175DA33E007A7AA4 /* NSString+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extended.m"; path = "../../CocoaHelper/NSString+Extended.m"; sourceTree = "<group>"; };
+		62735E56175DA33E007A7AA4 /* UICollectionView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+Extended.h"; path = "../../CocoaHelper/UICollectionView+Extended.h"; sourceTree = "<group>"; };
+		62735E57175DA33E007A7AA4 /* UICollectionView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+Extended.m"; path = "../../CocoaHelper/UICollectionView+Extended.m"; sourceTree = "<group>"; };
+		62735E58175DA33E007A7AA4 /* UIImage+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extended.h"; path = "../../CocoaHelper/UIImage+Extended.h"; sourceTree = "<group>"; };
+		62735E59175DA33E007A7AA4 /* UIImage+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extended.m"; path = "../../CocoaHelper/UIImage+Extended.m"; sourceTree = "<group>"; };
+		62735E5A175DA33E007A7AA4 /* UIScreen+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScreen+Extended.h"; path = "../../CocoaHelper/UIScreen+Extended.h"; sourceTree = "<group>"; };
+		62735E5B175DA33E007A7AA4 /* UIScreen+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScreen+Extended.m"; path = "../../CocoaHelper/UIScreen+Extended.m"; sourceTree = "<group>"; };
+		62735E5C175DA33E007A7AA4 /* UIScrollView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+Extended.h"; path = "../../CocoaHelper/UIScrollView+Extended.h"; sourceTree = "<group>"; };
+		62735E5D175DA33E007A7AA4 /* UIScrollView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+Extended.m"; path = "../../CocoaHelper/UIScrollView+Extended.m"; sourceTree = "<group>"; };
+		62735E5E175DA33E007A7AA4 /* UITableView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableView+Extended.h"; path = "../../CocoaHelper/UITableView+Extended.h"; sourceTree = "<group>"; };
+		62735E5F175DA33E007A7AA4 /* UITableView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableView+Extended.m"; path = "../../CocoaHelper/UITableView+Extended.m"; sourceTree = "<group>"; };
+		62735E60175DA33E007A7AA4 /* UIView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extended.h"; path = "../../CocoaHelper/UIView+Extended.h"; sourceTree = "<group>"; };
+		62735E61175DA33E007A7AA4 /* UIView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extended.m"; path = "../../CocoaHelper/UIView+Extended.m"; sourceTree = "<group>"; };
+		62735E62175DA33E007A7AA4 /* UIViewController+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Extended.h"; path = "../../CocoaHelper/UIViewController+Extended.h"; sourceTree = "<group>"; };
+		62735E63175DA33E007A7AA4 /* UIViewController+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Extended.m"; path = "../../CocoaHelper/UIViewController+Extended.m"; sourceTree = "<group>"; };
+		62735EAB175DA41B007A7AA4 /* CHCrayonPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCrayonPalette.h; path = ../../CocoaHelper/CHCrayonPalette.h; sourceTree = "<group>"; };
+		62735EAC175DA41B007A7AA4 /* CHCrayonPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCrayonPalette.m; path = ../../CocoaHelper/CHCrayonPalette.m; sourceTree = "<group>"; };
+		62735EB0175DA489007A7AA4 /* NSDateFormatterExtendedTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateFormatterExtendedTests.h; path = ../../CocoaHelperTests/NSDateFormatterExtendedTests.h; sourceTree = "<group>"; };
+		62735EB1175DA489007A7AA4 /* NSDateFormatterExtendedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateFormatterExtendedTests.m; path = ../../CocoaHelperTests/NSDateFormatterExtendedTests.m; sourceTree = "<group>"; };
+		62735F32175DA6D3007A7AA4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		62735F33175DA6F2007A7AA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62735F35175DA6FD007A7AA4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		62735F8C175DAC83007A7AA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		62735F8E175DAC89007A7AA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		62735FA7175DADD0007A7AA4 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHDebug.h; path = ../../CocoaHelper/CHDebug.h; sourceTree = "<group>"; };
+		62735FA8175DADD0007A7AA4 /* CHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHDebug.m; path = ../../CocoaHelper/CHDebug.m; sourceTree = "<group>"; };
+		62865B44175DCD4300B85BB6 /* CocoaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHelper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62735E14175DA26A007A7AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62735F8B175DAC7B007A7AA4 /* CoreGraphics.framework in Frameworks */,
+				62735E1B175DA26A007A7AA4 /* Foundation.framework in Frameworks */,
+				62735F8F175DAC89007A7AA4 /* QuartzCore.framework in Frameworks */,
+				62735F8D175DAC83007A7AA4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62735E24175DA26B007A7AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621FF1B0175DB04700709C36 /* CoreGraphics.framework in Frameworks */,
+				62735E2D175DA26B007A7AA4 /* Foundation.framework in Frameworks */,
+				621FF1B3175DB04D00709C36 /* QuartzCore.framework in Frameworks */,
+				62735E2A175DA26B007A7AA4 /* SenTestingKit.framework in Frameworks */,
+				621FF1B5175DB05000709C36 /* UIKit.framework in Frameworks */,
+				62735E30175DA26B007A7AA4 /* libCocoaHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62735E0E175DA26A007A7AA4 = {
+			isa = PBXGroup;
+			children = (
+				62735E1C175DA26A007A7AA4 /* CocoaHelper-iOS */,
+				62735E31175DA26B007A7AA4 /* CocoaHelper-iOSTests */,
+				62735E19175DA26A007A7AA4 /* Frameworks */,
+				62735E18175DA26A007A7AA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62735E18175DA26A007A7AA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62735E17175DA26A007A7AA4 /* libCocoaHelper.a */,
+				62735E28175DA26B007A7AA4 /* CocoaHelper-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62735E19175DA26A007A7AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */,
+				62735E1A175DA26A007A7AA4 /* Foundation.framework */,
+				62735F8E175DAC89007A7AA4 /* QuartzCore.framework */,
+				62735F8C175DAC83007A7AA4 /* UIKit.framework */,
+				62735E29175DA26B007A7AA4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62735E1C175DA26A007A7AA4 /* CocoaHelper-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				62865B47175DCD7B00B85BB6 /* Classes */,
+				62735F2E175DA66F007A7AA4 /* Resources */,
+				62735E1D175DA26A007A7AA4 /* Supporting Files */,
+			);
+			path = "CocoaHelper-iOS";
+			sourceTree = "<group>";
+		};
+		62735E1D175DA26A007A7AA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62735E1E175DA26A007A7AA4 /* CocoaHelper-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62735E31175DA26B007A7AA4 /* CocoaHelper-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				62735EB3175DA49B007A7AA4 /* Tests */,
+				62735E32175DA26B007A7AA4 /* Supporting Files */,
+			);
+			path = "CocoaHelper-iOSTests";
+			sourceTree = "<group>";
+		};
+		62735E32175DA26B007A7AA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62735E33175DA26B007A7AA4 /* CocoaHelper-iOSTests-Info.plist */,
+				62735E34175DA26B007A7AA4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62735E74175DA358007A7AA4 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				62735E44175DA33E007A7AA4 /* NSArray+Extended.h */,
+				62735E45175DA33E007A7AA4 /* NSArray+Extended.m */,
+				62735E46175DA33E007A7AA4 /* NSData+Extended.h */,
+				62735E47175DA33E007A7AA4 /* NSData+Extended.m */,
+				62735E48175DA33E007A7AA4 /* NSDate+Extended.h */,
+				62735E49175DA33E007A7AA4 /* NSDate+Extended.m */,
+				62735E4A175DA33E007A7AA4 /* NSDateFormatter+Extended.h */,
+				62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */,
+				62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */,
+				62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */,
+				62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */,
+				62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */,
+				62735E50175DA33E007A7AA4 /* NSObject+Extended.h */,
+				62735E51175DA33E007A7AA4 /* NSObject+Extended.m */,
+				62735E52175DA33E007A7AA4 /* NSSet+Extended.h */,
+				62735E53175DA33E007A7AA4 /* NSSet+Extended.m */,
+				62735E54175DA33E007A7AA4 /* NSString+Extended.h */,
+				62735E55175DA33E007A7AA4 /* NSString+Extended.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		62735E75175DA361007A7AA4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				62735E56175DA33E007A7AA4 /* UICollectionView+Extended.h */,
+				62735E57175DA33E007A7AA4 /* UICollectionView+Extended.m */,
+				62735E58175DA33E007A7AA4 /* UIImage+Extended.h */,
+				62735E59175DA33E007A7AA4 /* UIImage+Extended.m */,
+				62735E5A175DA33E007A7AA4 /* UIScreen+Extended.h */,
+				62735E5B175DA33E007A7AA4 /* UIScreen+Extended.m */,
+				62735E5C175DA33E007A7AA4 /* UIScrollView+Extended.h */,
+				62735E5D175DA33E007A7AA4 /* UIScrollView+Extended.m */,
+				62735E5E175DA33E007A7AA4 /* UITableView+Extended.h */,
+				62735E5F175DA33E007A7AA4 /* UITableView+Extended.m */,
+				62735E60175DA33E007A7AA4 /* UIView+Extended.h */,
+				62735E61175DA33E007A7AA4 /* UIView+Extended.m */,
+				62735E62175DA33E007A7AA4 /* UIViewController+Extended.h */,
+				62735E63175DA33E007A7AA4 /* UIViewController+Extended.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		62735EAE175DA421007A7AA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				62735EAB175DA41B007A7AA4 /* CHCrayonPalette.h */,
+				62735EAC175DA41B007A7AA4 /* CHCrayonPalette.m */,
+				62735FA7175DADD0007A7AA4 /* CHDebug.h */,
+				62735FA8175DADD0007A7AA4 /* CHDebug.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		62735EB3175DA49B007A7AA4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				62735EB0175DA489007A7AA4 /* NSDateFormatterExtendedTests.h */,
+				62735EB1175DA489007A7AA4 /* NSDateFormatterExtendedTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		62735F2E175DA66F007A7AA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62735F34175DA6F2007A7AA4 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		62865B47175DCD7B00B85BB6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62735E74175DA358007A7AA4 /* Foundation */,
+				62735E75175DA361007A7AA4 /* UIKit */,
+				62735EAE175DA421007A7AA4 /* Utilities */,
+				62865B44175DCD4300B85BB6 /* CocoaHelper.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62735E16175DA26A007A7AA4 /* CocoaHelper-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62735E3C175DA26B007A7AA4 /* Build configuration list for PBXNativeTarget "CocoaHelper-iOS" */;
+			buildPhases = (
+				62735E13175DA26A007A7AA4 /* Sources */,
+				62735E14175DA26A007A7AA4 /* Frameworks */,
+				62735E15175DA26A007A7AA4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaHelper-iOS";
+			productName = "CocoaHelper-iOS";
+			productReference = 62735E17175DA26A007A7AA4 /* libCocoaHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62735E27175DA26B007A7AA4 /* CocoaHelper-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62735E3F175DA26B007A7AA4 /* Build configuration list for PBXNativeTarget "CocoaHelper-iOSTests" */;
+			buildPhases = (
+				62735E23175DA26B007A7AA4 /* Sources */,
+				62735E24175DA26B007A7AA4 /* Frameworks */,
+				62735E25175DA26B007A7AA4 /* Resources */,
+				62735E26175DA26B007A7AA4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62735E2F175DA26B007A7AA4 /* PBXTargetDependency */,
+			);
+			name = "CocoaHelper-iOSTests";
+			productName = "CocoaHelper-iOSTests";
+			productReference = 62735E28175DA26B007A7AA4 /* CocoaHelper-iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62735E0F175DA26A007A7AA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Reneer";
+			};
+			buildConfigurationList = 62735E12175DA26A007A7AA4 /* Build configuration list for PBXProject "CocoaHelper-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = 62735E0E175DA26A007A7AA4;
+			productRefGroup = 62735E18175DA26A007A7AA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62735E16175DA26A007A7AA4 /* CocoaHelper-iOS */,
+				62735E27175DA26B007A7AA4 /* CocoaHelper-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62735E25175DA26B007A7AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62735E36175DA26B007A7AA4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62735E26175DA26B007A7AA4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62735E13175DA26A007A7AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62735EAD175DA41B007A7AA4 /* CHCrayonPalette.m in Sources */,
+				62735FA9175DADD0007A7AA4 /* CHDebug.m in Sources */,
+				62735E64175DA33E007A7AA4 /* NSArray+Extended.m in Sources */,
+				62735E65175DA33E007A7AA4 /* NSData+Extended.m in Sources */,
+				62735E66175DA33E007A7AA4 /* NSDate+Extended.m in Sources */,
+				62735E67175DA33E007A7AA4 /* NSDateFormatter+Extended.m in Sources */,
+				62735E68175DA33E007A7AA4 /* NSDictionary+Extended.m in Sources */,
+				62735E69175DA33E007A7AA4 /* NSNumber+Extended.m in Sources */,
+				62735E6A175DA33E007A7AA4 /* NSObject+Extended.m in Sources */,
+				62735E6B175DA33E007A7AA4 /* NSSet+Extended.m in Sources */,
+				62735E6C175DA33E007A7AA4 /* NSString+Extended.m in Sources */,
+				62735E6D175DA33E007A7AA4 /* UICollectionView+Extended.m in Sources */,
+				62735E6E175DA33E007A7AA4 /* UIImage+Extended.m in Sources */,
+				62735E6F175DA33E007A7AA4 /* UIScreen+Extended.m in Sources */,
+				62735E70175DA33E007A7AA4 /* UIScrollView+Extended.m in Sources */,
+				62735E71175DA33E007A7AA4 /* UITableView+Extended.m in Sources */,
+				62735E72175DA33E007A7AA4 /* UIView+Extended.m in Sources */,
+				62735E73175DA33E007A7AA4 /* UIViewController+Extended.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62735E23175DA26B007A7AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62735EB2175DA489007A7AA4 /* NSDateFormatterExtendedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62735E2F175DA26B007A7AA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62735E16175DA26A007A7AA4 /* CocoaHelper-iOS */;
+			targetProxy = 62735E2E175DA26B007A7AA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62735E34175DA26B007A7AA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62735E35175DA26B007A7AA4 /* en */,
+				62735F32175DA6D3007A7AA4 /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		62735F34175DA6F2007A7AA4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62735F33175DA6F2007A7AA4 /* en */,
+				62735F35175DA6FD007A7AA4 /* de */,
+			);
+			name = Localizable.strings;
+			path = ../../CocoaHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62735E3A175DA26B007A7AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		62735E3B175DA26B007A7AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62735E3D175DA26B007A7AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaHelper_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper-iOS/CocoaHelper-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CocoaHelper;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62735E3E175DA26B007A7AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CocoaHelper_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper-iOS/CocoaHelper-iOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = CocoaHelper;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62735E40175DA26B007A7AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper-iOS/CocoaHelper-iOS-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHelper-iOSTests/CocoaHelper-iOSTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		62735E41175DA26B007A7AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaHelper-iOS/CocoaHelper-iOS-Prefix.pch";
+				INFOPLIST_FILE = "CocoaHelper-iOSTests/CocoaHelper-iOSTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62735E12175DA26A007A7AA4 /* Build configuration list for PBXProject "CocoaHelper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62735E3A175DA26B007A7AA4 /* Debug */,
+				62735E3B175DA26B007A7AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62735E3C175DA26B007A7AA4 /* Build configuration list for PBXNativeTarget "CocoaHelper-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62735E3D175DA26B007A7AA4 /* Debug */,
+				62735E3E175DA26B007A7AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62735E3F175DA26B007A7AA4 /* Build configuration list for PBXNativeTarget "CocoaHelper-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62735E40175DA26B007A7AA4 /* Debug */,
+				62735E41175DA26B007A7AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62735E0F175DA26A007A7AA4 /* Project object */;
+}

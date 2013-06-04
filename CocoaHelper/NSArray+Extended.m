@@ -15,6 +15,27 @@
 
 #pragma mark - Instance Methods
 
+- (BOOL)containsObjectsFromArray:(NSArray *)array {
+    
+    for (id object in array) {
+        
+        if (![self containsObject:object]) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
+- (BOOL)containsOnlyObjectsFromArray:(NSArray *)array {
+    
+    if ([self count] != [array count]) {
+        return NO;
+    }
+    
+    return [self containsObjectsFromArray:array];
+}
+
 - (id)firstObject {
     
     if ([self count] != 0) {

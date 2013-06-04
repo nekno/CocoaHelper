@@ -12,6 +12,8 @@
 
 @interface NSSet (Extended)
 
+- (BOOL)containsObjectsFromSet:(NSSet *)set;
+- (BOOL)containsOnlyObjectFromSet:(NSSet *)set;
 - (BOOL)isEmptyOrNil;
 
 @end

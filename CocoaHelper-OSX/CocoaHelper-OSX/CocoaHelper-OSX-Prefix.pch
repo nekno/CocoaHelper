@@ -1,12 +1,12 @@
 //
-// Prefix header for all source files of the 'CocoaHelper' target in the 'CocoaHelper' project
+// Prefix header for all source files of the 'CocoaHelper-OSX' target in the 'CocoaHelper-OSX' project
 //
 
 #ifdef __OBJC__
 
+#import <AppKit/AppKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
 
 #endif
