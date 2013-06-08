@@ -38,9 +38,9 @@
 		62735F2B175DA57B007A7AA4 /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735F18175DA57B007A7AA4 /* NSString+Extended.m */; };
 		62735F3A175DA731007A7AA4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62735F38175DA731007A7AA4 /* Localizable.strings */; };
 		62735F72175DAA6F007A7AA4 /* NSDateFormatterExtendedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735F71175DAA6F007A7AA4 /* NSDateFormatterExtendedTests.m */; };
-		62735FAF175DAE58007A7AA4 /* CHDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 62735FAD175DAE58007A7AA4 /* CHDebug.h */; };
-		62735FB0175DAE58007A7AA4 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735FAE175DAE58007A7AA4 /* CHDebug.m */; };
-		62865B46175DCD5200B85BB6 /* CocoaHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62865B45175DCD5200B85BB6 /* CocoaHelper.h */; };
+		62865B46175DCD5200B85BB6 /* CocoaHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 62865B45175DCD5200B85BB6 /* CocoaHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62DCC6951762E49C00421128 /* CHDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 62DCC6931762E49C00421128 /* CHDebug.h */; };
+		62DCC6961762E49C00421128 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DCC6941762E49C00421128 /* CHDebug.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +92,9 @@
 		62735F3B175DA73A007A7AA4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = ../../CocoaHelper/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62735F70175DAA6F007A7AA4 /* NSDateFormatterExtendedTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateFormatterExtendedTests.h; path = ../../CocoaHelperTests/NSDateFormatterExtendedTests.h; sourceTree = "<group>"; };
 		62735F71175DAA6F007A7AA4 /* NSDateFormatterExtendedTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateFormatterExtendedTests.m; path = ../../CocoaHelperTests/NSDateFormatterExtendedTests.m; sourceTree = "<group>"; };
-		62735FAD175DAE58007A7AA4 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHDebug.h; path = "/Users/MichaelReneer/Documents/Developer/CocoaHelper/CocoaHelper-iOS/CocoaHelper-iOS/../../CocoaHelper/CHDebug.h"; sourceTree = "<absolute>"; };
-		62735FAE175DAE58007A7AA4 /* CHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHDebug.m; path = "/Users/MichaelReneer/Documents/Developer/CocoaHelper/CocoaHelper-iOS/CocoaHelper-iOS/../../CocoaHelper/CHDebug.m"; sourceTree = "<absolute>"; };
 		62865B45175DCD5200B85BB6 /* CocoaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHelper.h; sourceTree = "<group>"; };
+		62DCC6931762E49C00421128 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHDebug.h; path = ../../CocoaHelper/CHDebug.h; sourceTree = "<group>"; };
+		62DCC6941762E49C00421128 /* CHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHDebug.m; path = ../../CocoaHelper/CHDebug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +247,8 @@
 		62735FAC175DAE46007A7AA4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				62735FAD175DAE58007A7AA4 /* CHDebug.h */,
-				62735FAE175DAE58007A7AA4 /* CHDebug.m */,
+				62DCC6931762E49C00421128 /* CHDebug.h */,
+				62DCC6941762E49C00421128 /* CHDebug.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -270,7 +270,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62735FAF175DAE58007A7AA4 /* CHDebug.h in Headers */,
+				62865B46175DCD5200B85BB6 /* CocoaHelper.h in Headers */,
+				62DCC6951762E49C00421128 /* CHDebug.h in Headers */,
 				62735F1A175DA57B007A7AA4 /* NSArray+Extended.h in Headers */,
 				62735F1C175DA57B007A7AA4 /* NSData+Extended.h in Headers */,
 				62735F1E175DA57B007A7AA4 /* NSDate+Extended.h in Headers */,
@@ -280,7 +281,6 @@
 				62735F26175DA57B007A7AA4 /* NSObject+Extended.h in Headers */,
 				62735F28175DA57B007A7AA4 /* NSSet+Extended.h in Headers */,
 				62735F2A175DA57B007A7AA4 /* NSString+Extended.h in Headers */,
-				62865B46175DCD5200B85BB6 /* CocoaHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62735FB0175DAE58007A7AA4 /* CHDebug.m in Sources */,
+				62DCC6961762E49C00421128 /* CHDebug.m in Sources */,
 				62735F1B175DA57B007A7AA4 /* NSArray+Extended.m in Sources */,
 				62735F1D175DA57B007A7AA4 /* NSData+Extended.m in Sources */,
 				62735F1F175DA57B007A7AA4 /* NSDate+Extended.m in Sources */,
