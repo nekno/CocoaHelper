@@ -95,6 +95,8 @@
 		62865B45175DCD5200B85BB6 /* CocoaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHelper.h; sourceTree = "<group>"; };
 		62DCC6931762E49C00421128 /* CHDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHDebug.h; path = ../../CocoaHelper/CHDebug.h; sourceTree = "<group>"; };
 		62DCC6941762E49C00421128 /* CHDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHDebug.m; path = ../../CocoaHelper/CHDebug.m; sourceTree = "<group>"; };
+		62DCC6991762E60800421128 /* LICENSE.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE.markdown; path = ../../LICENSE.markdown; sourceTree = "<group>"; };
+		62DCC69A1762E60800421128 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.markdown; path = ../../README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				62735F38175DA731007A7AA4 /* Localizable.strings */,
+				62DCC6991762E60800421128 /* LICENSE.markdown */,
+				62DCC69A1762E60800421128 /* README.markdown */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
