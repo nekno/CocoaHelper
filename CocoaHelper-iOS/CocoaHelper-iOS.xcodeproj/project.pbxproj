@@ -10,6 +10,28 @@
 		621FF1B0175DB04700709C36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */; };
 		621FF1B3175DB04D00709C36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8E175DAC89007A7AA4 /* QuartzCore.framework */; };
 		621FF1B5175DB05000709C36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8C175DAC83007A7AA4 /* UIKit.framework */; };
+		62692EF4176F68260032485B /* NSCache+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62692EF3176F68260032485B /* NSCache+Extended.m */; };
+		62692EFB176F687E0032485B /* NSUserDefaults+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62692EFA176F687E0032485B /* NSUserDefaults+Extended.m */; };
+		62692F02176F68CA0032485B /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E44175DA33E007A7AA4 /* NSArray+Extended.h */; };
+		62692F03176F68CA0032485B /* NSCache+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62692EF2176F68260032485B /* NSCache+Extended.h */; };
+		62692F04176F68CA0032485B /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E46175DA33E007A7AA4 /* NSData+Extended.h */; };
+		62692F05176F68CA0032485B /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E48175DA33E007A7AA4 /* NSDate+Extended.h */; };
+		62692F06176F68CA0032485B /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4A175DA33E007A7AA4 /* NSDateFormatter+Extended.h */; };
+		62692F07176F68CA0032485B /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */; };
+		62692F09176F68CA0032485B /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E50175DA33E007A7AA4 /* NSObject+Extended.h */; };
+		62692F0A176F68CA0032485B /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E52175DA33E007A7AA4 /* NSSet+Extended.h */; };
+		62692F0B176F68CA0032485B /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E54175DA33E007A7AA4 /* NSString+Extended.h */; };
+		62692F0C176F68CA0032485B /* NSUserDefaults+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62692EF9176F687E0032485B /* NSUserDefaults+Extended.h */; };
+		62692F0D176F68CA0032485B /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E56175DA33E007A7AA4 /* UICollectionView+Extended.h */; };
+		62692F0E176F68CA0032485B /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E58175DA33E007A7AA4 /* UIImage+Extended.h */; };
+		62692F0F176F68CA0032485B /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5A175DA33E007A7AA4 /* UIScreen+Extended.h */; };
+		62692F10176F68CA0032485B /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5C175DA33E007A7AA4 /* UIScrollView+Extended.h */; };
+		62692F11176F68CA0032485B /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5E175DA33E007A7AA4 /* UITableView+Extended.h */; };
+		62692F12176F68CA0032485B /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E60175DA33E007A7AA4 /* UIView+Extended.h */; };
+		62692F13176F68CA0032485B /* UIViewController+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E62175DA33E007A7AA4 /* UIViewController+Extended.h */; };
+		62692F23176FC36A0032485B /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735EAB175DA41B007A7AA4 /* CHCrayonPalette.h */; };
+		62692F24176FC36A0032485B /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735FA7175DADD0007A7AA4 /* CHDebug.h */; };
+		62692F25176FC3700032485B /* CocoaHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62865B44175DCD4300B85BB6 /* CocoaHelper.h */; };
 		62735E1B175DA26A007A7AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E1A175DA26A007A7AA4 /* Foundation.framework */; };
 		62735E2A175DA26B007A7AA4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E29175DA26B007A7AA4 /* SenTestingKit.framework */; };
 		62735E2D175DA26B007A7AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735E1A175DA26A007A7AA4 /* Foundation.framework */; };
@@ -20,7 +42,6 @@
 		62735E66175DA33E007A7AA4 /* NSDate+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E49175DA33E007A7AA4 /* NSDate+Extended.m */; };
 		62735E67175DA33E007A7AA4 /* NSDateFormatter+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */; };
 		62735E68175DA33E007A7AA4 /* NSDictionary+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */; };
-		62735E69175DA33E007A7AA4 /* NSNumber+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */; };
 		62735E6A175DA33E007A7AA4 /* NSObject+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E51175DA33E007A7AA4 /* NSObject+Extended.m */; };
 		62735E6B175DA33E007A7AA4 /* NSSet+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E53175DA33E007A7AA4 /* NSSet+Extended.m */; };
 		62735E6C175DA33E007A7AA4 /* NSString+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735E55175DA33E007A7AA4 /* NSString+Extended.m */; };
@@ -36,25 +57,7 @@
 		62735F8B175DAC7B007A7AA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8A175DAC7B007A7AA4 /* CoreGraphics.framework */; };
 		62735F8D175DAC83007A7AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8C175DAC83007A7AA4 /* UIKit.framework */; };
 		62735F8F175DAC89007A7AA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62735F8E175DAC89007A7AA4 /* QuartzCore.framework */; };
-		62735F90175DAD0A007A7AA4 /* NSArray+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E44175DA33E007A7AA4 /* NSArray+Extended.h */; };
-		62735F91175DAD0A007A7AA4 /* NSData+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E46175DA33E007A7AA4 /* NSData+Extended.h */; };
-		62735F92175DAD0A007A7AA4 /* NSDate+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E48175DA33E007A7AA4 /* NSDate+Extended.h */; };
-		62735F93175DAD0A007A7AA4 /* NSDateFormatter+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4A175DA33E007A7AA4 /* NSDateFormatter+Extended.h */; };
-		62735F94175DAD0A007A7AA4 /* NSDictionary+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */; };
-		62735F95175DAD0A007A7AA4 /* NSNumber+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */; };
-		62735F96175DAD0A007A7AA4 /* NSObject+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E50175DA33E007A7AA4 /* NSObject+Extended.h */; };
-		62735F97175DAD0A007A7AA4 /* NSSet+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E52175DA33E007A7AA4 /* NSSet+Extended.h */; };
-		62735F98175DAD0A007A7AA4 /* NSString+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E54175DA33E007A7AA4 /* NSString+Extended.h */; };
-		62735F99175DAD0A007A7AA4 /* UICollectionView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E56175DA33E007A7AA4 /* UICollectionView+Extended.h */; };
-		62735F9A175DAD0A007A7AA4 /* UIImage+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E58175DA33E007A7AA4 /* UIImage+Extended.h */; };
-		62735F9B175DAD0A007A7AA4 /* UIScreen+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5A175DA33E007A7AA4 /* UIScreen+Extended.h */; };
-		62735F9C175DAD0A007A7AA4 /* UIScrollView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5C175DA33E007A7AA4 /* UIScrollView+Extended.h */; };
-		62735F9D175DAD0A007A7AA4 /* UITableView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E5E175DA33E007A7AA4 /* UITableView+Extended.h */; };
-		62735F9E175DAD0A007A7AA4 /* UIView+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E60175DA33E007A7AA4 /* UIView+Extended.h */; };
-		62735F9F175DAD0A007A7AA4 /* UIViewController+Extended.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735E62175DA33E007A7AA4 /* UIViewController+Extended.h */; };
 		62735FA9175DADD0007A7AA4 /* CHDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 62735FA8175DADD0007A7AA4 /* CHDebug.m */; };
-		62735FAA175DAE0F007A7AA4 /* CHDebug.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735FA7175DADD0007A7AA4 /* CHDebug.h */; };
-		62735FAB175DAE16007A7AA4 /* CHCrayonPalette.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62735EAB175DA41B007A7AA4 /* CHCrayonPalette.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,30 +77,36 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				62735FAB175DAE16007A7AA4 /* CHCrayonPalette.h in CopyFiles */,
-				62735FAA175DAE0F007A7AA4 /* CHDebug.h in CopyFiles */,
-				62735F90175DAD0A007A7AA4 /* NSArray+Extended.h in CopyFiles */,
-				62735F91175DAD0A007A7AA4 /* NSData+Extended.h in CopyFiles */,
-				62735F92175DAD0A007A7AA4 /* NSDate+Extended.h in CopyFiles */,
-				62735F93175DAD0A007A7AA4 /* NSDateFormatter+Extended.h in CopyFiles */,
-				62735F94175DAD0A007A7AA4 /* NSDictionary+Extended.h in CopyFiles */,
-				62735F95175DAD0A007A7AA4 /* NSNumber+Extended.h in CopyFiles */,
-				62735F96175DAD0A007A7AA4 /* NSObject+Extended.h in CopyFiles */,
-				62735F97175DAD0A007A7AA4 /* NSSet+Extended.h in CopyFiles */,
-				62735F98175DAD0A007A7AA4 /* NSString+Extended.h in CopyFiles */,
-				62735F99175DAD0A007A7AA4 /* UICollectionView+Extended.h in CopyFiles */,
-				62735F9A175DAD0A007A7AA4 /* UIImage+Extended.h in CopyFiles */,
-				62735F9B175DAD0A007A7AA4 /* UIScreen+Extended.h in CopyFiles */,
-				62735F9C175DAD0A007A7AA4 /* UIScrollView+Extended.h in CopyFiles */,
-				62735F9D175DAD0A007A7AA4 /* UITableView+Extended.h in CopyFiles */,
-				62735F9E175DAD0A007A7AA4 /* UIView+Extended.h in CopyFiles */,
-				62735F9F175DAD0A007A7AA4 /* UIViewController+Extended.h in CopyFiles */,
+				62692F25176FC3700032485B /* CocoaHelper.h in CopyFiles */,
+				62692F23176FC36A0032485B /* CHCrayonPalette.h in CopyFiles */,
+				62692F24176FC36A0032485B /* CHDebug.h in CopyFiles */,
+				62692F02176F68CA0032485B /* NSArray+Extended.h in CopyFiles */,
+				62692F03176F68CA0032485B /* NSCache+Extended.h in CopyFiles */,
+				62692F04176F68CA0032485B /* NSData+Extended.h in CopyFiles */,
+				62692F05176F68CA0032485B /* NSDate+Extended.h in CopyFiles */,
+				62692F06176F68CA0032485B /* NSDateFormatter+Extended.h in CopyFiles */,
+				62692F07176F68CA0032485B /* NSDictionary+Extended.h in CopyFiles */,
+				62692F09176F68CA0032485B /* NSObject+Extended.h in CopyFiles */,
+				62692F0A176F68CA0032485B /* NSSet+Extended.h in CopyFiles */,
+				62692F0B176F68CA0032485B /* NSString+Extended.h in CopyFiles */,
+				62692F0C176F68CA0032485B /* NSUserDefaults+Extended.h in CopyFiles */,
+				62692F0D176F68CA0032485B /* UICollectionView+Extended.h in CopyFiles */,
+				62692F0E176F68CA0032485B /* UIImage+Extended.h in CopyFiles */,
+				62692F0F176F68CA0032485B /* UIScreen+Extended.h in CopyFiles */,
+				62692F10176F68CA0032485B /* UIScrollView+Extended.h in CopyFiles */,
+				62692F11176F68CA0032485B /* UITableView+Extended.h in CopyFiles */,
+				62692F12176F68CA0032485B /* UIView+Extended.h in CopyFiles */,
+				62692F13176F68CA0032485B /* UIViewController+Extended.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62692EF2176F68260032485B /* NSCache+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSCache+Extended.h"; path = "../../CocoaHelper/NSCache+Extended.h"; sourceTree = "<group>"; };
+		62692EF3176F68260032485B /* NSCache+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSCache+Extended.m"; path = "../../CocoaHelper/NSCache+Extended.m"; sourceTree = "<group>"; };
+		62692EF9176F687E0032485B /* NSUserDefaults+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+Extended.h"; path = "../../CocoaHelper/NSUserDefaults+Extended.h"; sourceTree = "<group>"; };
+		62692EFA176F687E0032485B /* NSUserDefaults+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+Extended.m"; path = "../../CocoaHelper/NSUserDefaults+Extended.m"; sourceTree = "<group>"; };
 		62735E17175DA26A007A7AA4 /* libCocoaHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		62735E1A175DA26A007A7AA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		62735E1E175DA26A007A7AA4 /* CocoaHelper-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaHelper-iOS-Prefix.pch"; sourceTree = "<group>"; };
@@ -115,8 +124,6 @@
 		62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+Extended.m"; path = "../../CocoaHelper/NSDateFormatter+Extended.m"; sourceTree = "<group>"; };
 		62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extended.h"; path = "../../CocoaHelper/NSDictionary+Extended.h"; sourceTree = "<group>"; };
 		62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Extended.m"; path = "../../CocoaHelper/NSDictionary+Extended.m"; sourceTree = "<group>"; };
-		62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Extended.h"; path = "../../CocoaHelper/NSNumber+Extended.h"; sourceTree = "<group>"; };
-		62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Extended.m"; path = "../../CocoaHelper/NSNumber+Extended.m"; sourceTree = "<group>"; };
 		62735E50175DA33E007A7AA4 /* NSObject+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extended.h"; path = "../../CocoaHelper/NSObject+Extended.h"; sourceTree = "<group>"; };
 		62735E51175DA33E007A7AA4 /* NSObject+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extended.m"; path = "../../CocoaHelper/NSObject+Extended.m"; sourceTree = "<group>"; };
 		62735E52175DA33E007A7AA4 /* NSSet+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+Extended.h"; path = "../../CocoaHelper/NSSet+Extended.h"; sourceTree = "<group>"; };
@@ -254,6 +261,8 @@
 			children = (
 				62735E44175DA33E007A7AA4 /* NSArray+Extended.h */,
 				62735E45175DA33E007A7AA4 /* NSArray+Extended.m */,
+				62692EF2176F68260032485B /* NSCache+Extended.h */,
+				62692EF3176F68260032485B /* NSCache+Extended.m */,
 				62735E46175DA33E007A7AA4 /* NSData+Extended.h */,
 				62735E47175DA33E007A7AA4 /* NSData+Extended.m */,
 				62735E48175DA33E007A7AA4 /* NSDate+Extended.h */,
@@ -262,14 +271,14 @@
 				62735E4B175DA33E007A7AA4 /* NSDateFormatter+Extended.m */,
 				62735E4C175DA33E007A7AA4 /* NSDictionary+Extended.h */,
 				62735E4D175DA33E007A7AA4 /* NSDictionary+Extended.m */,
-				62735E4E175DA33E007A7AA4 /* NSNumber+Extended.h */,
-				62735E4F175DA33E007A7AA4 /* NSNumber+Extended.m */,
 				62735E50175DA33E007A7AA4 /* NSObject+Extended.h */,
 				62735E51175DA33E007A7AA4 /* NSObject+Extended.m */,
 				62735E52175DA33E007A7AA4 /* NSSet+Extended.h */,
 				62735E53175DA33E007A7AA4 /* NSSet+Extended.m */,
 				62735E54175DA33E007A7AA4 /* NSString+Extended.h */,
 				62735E55175DA33E007A7AA4 /* NSString+Extended.m */,
+				62692EF9176F687E0032485B /* NSUserDefaults+Extended.h */,
+				62692EFA176F687E0032485B /* NSUserDefaults+Extended.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -438,14 +447,15 @@
 				62735EAD175DA41B007A7AA4 /* CHCrayonPalette.m in Sources */,
 				62735FA9175DADD0007A7AA4 /* CHDebug.m in Sources */,
 				62735E64175DA33E007A7AA4 /* NSArray+Extended.m in Sources */,
+				62692EF4176F68260032485B /* NSCache+Extended.m in Sources */,
 				62735E65175DA33E007A7AA4 /* NSData+Extended.m in Sources */,
 				62735E66175DA33E007A7AA4 /* NSDate+Extended.m in Sources */,
 				62735E67175DA33E007A7AA4 /* NSDateFormatter+Extended.m in Sources */,
 				62735E68175DA33E007A7AA4 /* NSDictionary+Extended.m in Sources */,
-				62735E69175DA33E007A7AA4 /* NSNumber+Extended.m in Sources */,
 				62735E6A175DA33E007A7AA4 /* NSObject+Extended.m in Sources */,
 				62735E6B175DA33E007A7AA4 /* NSSet+Extended.m in Sources */,
 				62735E6C175DA33E007A7AA4 /* NSString+Extended.m in Sources */,
+				62692EFB176F687E0032485B /* NSUserDefaults+Extended.m in Sources */,
 				62735E6D175DA33E007A7AA4 /* UICollectionView+Extended.m in Sources */,
 				62735E6E175DA33E007A7AA4 /* UIImage+Extended.m in Sources */,
 				62735E6F175DA33E007A7AA4 /* UIScreen+Extended.m in Sources */,

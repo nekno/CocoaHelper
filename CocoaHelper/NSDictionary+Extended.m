@@ -7,7 +7,6 @@
 //
 
 #import "NSDictionary+Extended.h"
-#import "NSNumber+Extended.h"
 
 #pragma mark - Implementation
 
@@ -23,8 +22,8 @@
     return ([self allKeysForObject:object] != nil);
 }
 
-- (BOOL)isEmptyOrNil {
-	return (self == nil || [self count] == 0);
+- (BOOL)isEmpty {
+	return ([self count] == 0);
 }
 
 @end

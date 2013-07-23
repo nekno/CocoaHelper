@@ -14,8 +14,8 @@
 
 #pragma mark - Instance Methods
 
-- (BOOL)isEmptyOrNil {
-	return (self == nil || [self length] == 0);
+- (BOOL)isEmpty {
+	return ([self length] == 0);
 }
 
 @end

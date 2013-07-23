@@ -12,6 +12,6 @@
 
 @interface NSData (Extended)
 
-- (BOOL)isEmptyOrNil;
+- (BOOL)isEmpty;
 
 @end

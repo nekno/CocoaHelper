@@ -14,9 +14,9 @@
 
 #pragma mark - Instance Methods
 
-- (BOOL)containsObjectsFromSet:(NSSet *)set {
+- (BOOL)containsAllObjectsFromArray:(NSArray *)array; {
     
-    for (id object in set) {
+    for (id object in array) {
         
         if (![self containsObject:object]) {
             return NO;
@@ -26,17 +26,17 @@
     return YES;
 }
 
-- (BOOL)containsOnlyObjectFromSet:(NSSet *)set {
+- (BOOL)containsOnlyObjectFromArray:(NSArray *)array; {
     
-    if ([self count] != [set count]) {
+    if ([self count] != [array count]) {
         return NO;
     }
     
-    return [self containsObjectsFromSet:set];
+    return [self containsAllObjectsFromArray:array];
 }
 
-- (BOOL)isEmptyOrNil {
-	return (self == nil || [self count] == 0);
+- (BOOL)isEmpty {
+	return ([self count] == 0);
 }
 
 @end

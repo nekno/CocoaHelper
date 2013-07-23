@@ -15,6 +15,6 @@
 
 - (BOOL)containsKey:(id)key;
 - (BOOL)containsObject:(id)object;
-- (BOOL)isEmptyOrNil;
+- (BOOL)isEmpty;
 
 @end

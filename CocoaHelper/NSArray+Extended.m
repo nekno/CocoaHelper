@@ -7,7 +7,6 @@
 //
 
 #import "NSArray+Extended.h"
-#import "NSNumber+Extended.h"
 
 #pragma mark - Implementation
 
@@ -15,7 +14,7 @@
 
 #pragma mark - Instance Methods
 
-- (BOOL)containsObjectsFromArray:(NSArray *)array {
+- (BOOL)containsAllObjectsFromArray:(NSArray *)array {
     
     for (id object in array) {
         
@@ -33,7 +32,7 @@
         return NO;
     }
     
-    return [self containsObjectsFromArray:array];
+    return [self containsAllObjectsFromArray:array];
 }
 
 - (id)firstObject {
@@ -45,8 +44,8 @@
     return nil;
 }
 
-- (BOOL)isEmptyOrNil {
-	return (self == nil || [self count] == 0);
+- (BOOL)isEmpty {
+	return ([self count] == 0);
 }
 
 @end

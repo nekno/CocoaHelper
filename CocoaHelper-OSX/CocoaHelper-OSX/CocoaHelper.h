@@ -9,14 +9,15 @@
 #pragma mark - Foundation
 
 #import "NSArray+Extended.h"
+#import "NSCache+Extended.h"
 #import "NSData+Extended.h"
 #import "NSDate+Extended.h"
 #import "NSDateFormatter+Extended.h"
 #import "NSDictionary+Extended.h"
-#import "NSNumber+Extended.h"
 #import "NSObject+Extended.h"
 #import "NSSet+Extended.h"
 #import "NSString+Extended.h"
+#import "NSUserDefaults+Extended.h"
 
 #pragma mark - Utilities
 

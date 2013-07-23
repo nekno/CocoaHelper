@@ -13,9 +13,9 @@
 
 @interface NSArray (Extended)
 
-- (BOOL)containsObjectsFromArray:(NSArray *)array;
+- (BOOL)containsAllObjectsFromArray:(NSArray *)array;
 - (BOOL)containsOnlyObjectsFromArray:(NSArray *)array;
 - (id)firstObject;
-- (BOOL)isEmptyOrNil;
+- (BOOL)isEmpty;
 
 @end

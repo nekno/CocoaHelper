@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Michael Reneer. All rights reserved.
 //
 
-#import "NSNumber+Extended.h"
 #import "NSString+Extended.h"
 
 #pragma mark - Implementation
@@ -25,8 +24,8 @@
     return (range.location != NSNotFound);
 }
 
-- (BOOL)isEmptyOrNil {
-	return (self == nil || [self length] == 0);
+- (BOOL)isEmpty {
+	return ([self length] == 0);
 }
 
 @end
