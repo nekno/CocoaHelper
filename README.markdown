@@ -1,10 +1,8 @@
-CocoaHelper
-==========
+# CocoaHelper
 
 This project began because I was interested in git submodules. There are many "category collections" out there, and this is just another one that happens to contain extensions I have found useful or interesting. This project has recently been restructured to better support build the framework for both OSX and iOS.
 
-Install As A Sub Project
-----------
+## Install As A Sub Project
 
 #### Add A Submodule To Project
 
@@ -27,10 +25,8 @@ Install As A Sub Project
 
 For more information see the git documentation on [submodules][]
 
-License
-----------
+## License
 
 Copyright (c) 2012-2013 Michael Reneer. See LICENSE for details.
-
 
 [submodules]: http://git-scm.com/book/en/Git-Tools-Submodules "Submodules"
