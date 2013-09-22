@@ -1,5 +1,5 @@
 //
-//  CHCrayonPalette.h
+//  UIColor+Extended.h
 //  CocoaHelper
 //
 //  Created by Michael Reneer on 6/7/12.
@@ -10,7 +10,7 @@
 
 #pragma mark - Interface
 
-@interface CHCrayonPalette : NSObject
+@interface UIColor (Extended)
 
 + (UIColor *)aluminumColor;
 + (UIColor *)aquaColor;
@@ -34,7 +34,6 @@
 + (UIColor *)lemonColor;
 + (UIColor *)licoriceColor;
 + (UIColor *)limeColor;
-+ (UIColor *)magentaColor;
 + (UIColor *)magnesiumColor;
 + (UIColor *)maraschinoColor;
 + (UIColor *)maroonColor;

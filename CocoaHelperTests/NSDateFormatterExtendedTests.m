@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Michael Reneer. All rights reserved.
 //
 
-#import "NSDate+Extended.h"
-#import "NSDateFormatter+Extended.h"
+#import <CocoaHelper/CocoaHelper.h>
 #import "NSDateFormatterExtendedTests.h"
 
 #pragma mark - Implementation
@@ -27,85 +26,85 @@
 #pragma mark - Test Methods
 
 - (void)testRelativeDateAndTimeStringFromDate {
-//    NSDate *date = nil;
-//    NSString *result = nil;
-//    
-//    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0.0f - TimeIntervalOfOneSecond];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 second ago", nil);
-//    
+    NSDate *date = nil;
+    NSString *actual = nil;
+    
+    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0.0f - TimeIntervalOfOneSecond];
+    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+    XCTAssertEqualObjects(actual, @"1 second ago");
+    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0.0f];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"just now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"just now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0.0f + TimeIntervalOfOneSecond];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 second from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"1 second from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneMinute - TimeIntervalOfOneSecond];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"59 seconds from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"59 seconds from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneMinute];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 minute from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"1 minute from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneMinute + TimeIntervalOfOneSecond];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 minute from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"1 minute from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneHour - TimeIntervalOfOneMinute];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"59 minutes from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"59 minutes from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneHour];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 hour from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"1 hour from now");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneHour + TimeIntervalOfOneMinute];
-//    result = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
-//    STAssertEqualObjects(result, @"1 hour from now", nil);
+//    actual = [NSDateFormatter relativeDateAndTimeStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"1 hour from now");
 }
 
-- (void)testRelativeDateOnlyStringFromDate {
+//- (void)testRelativeDateOnlyStringFromDate {
 //    NSDate *date = nil;
-//    NSString *result = nil;
+//    NSString *actual = nil;
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneDay * -1];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"yesterday", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"yesterday");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneHour * -1];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneMinute * -1];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneSecond * -1];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:0.0f];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneSecond];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneMinute];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneHour];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"today", nil);
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"today");
 //    
 //    date = [[NSDate alloc] initWithTimeIntervalSinceNow:TimeIntervalOfOneDay];
-//    result = [NSDateFormatter relativeDateOnlyStringFromDate:date];
-//    STAssertEqualObjects(result, @"tomorrow", nil);
-}
+//    actual = [NSDateFormatter relativeDateOnlyStringFromDate:date];
+//    XCTAssertEqualObjects(actual, @"tomorrow");
+//}
 
 @end

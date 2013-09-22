@@ -1,16 +1,16 @@
 //
-//  CHCrayonPalette.m
+//  UIColor+Extended
 //  CocoaHelper
 //
 //  Created by Michael Reneer on 6/7/12.
 //  Copyright (c) 2012 Michael Reneer. All rights reserved.
 //
 
-#import "CHCrayonPalette.h"
+#import "UIColor+Extended.h"
 
 #pragma mark - Implementation
 
-@implementation CHCrayonPalette
+@implementation UIColor (Extended)
 
 #pragma mark - Class Methods
 
@@ -400,24 +400,6 @@
         CGFloat blue = 0.0f / 255.0f;
         CGFloat green = 255.0f / 255.0f;
         CGFloat red = 128.0f / 255.0f;
-        
-        color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
-    };
-    
-    static dispatch_once_t predicate = 0;
-    dispatch_once(&predicate, block);
-    
-    return color;
-}
-
-+ (UIColor *)magentaColor {
-    static UIColor *color = nil;
-    
-    dispatch_block_t block = ^(void) {
-        CGFloat alpha = 1.0f;
-        CGFloat blue = 255.0f / 255.0f;
-        CGFloat green = 0.0f / 255.0f;
-        CGFloat red = 255.0f / 255.0f;
         
         color = [[UIColor alloc] initWithRed:red green:green blue:blue alpha:alpha];
     };

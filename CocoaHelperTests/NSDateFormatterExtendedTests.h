@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Michael Reneer. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #pragma mark - Interface
 
-@interface NSDateFormatterExtendedTests : SenTestCase
+@interface NSDateFormatterExtendedTests : XCTestCase
 
 @end
