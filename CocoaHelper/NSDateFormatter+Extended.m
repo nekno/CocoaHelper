@@ -197,7 +197,7 @@
         NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"MMMdyyyy" options:0 locale:locale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
         NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
-        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@'%@'%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
     };
@@ -232,7 +232,7 @@
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
         NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
         NSString *tomorrow = NSLocalizedString(@"TOMORROW", @"String for relative date string for tomorrow.");
-        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", tomorrow, separator, timeComponent];
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"'%@%@'%@", tomorrow, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
     };
@@ -251,7 +251,7 @@
         NSString *dateComponent = [NSDateFormatter dateFormatFromTemplate:@"EEEE" options:0 locale:locale];
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
         NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
-        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", dateComponent, separator, timeComponent];
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@'%@'%@", dateComponent, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
     };
@@ -286,7 +286,7 @@
         NSString *timeComponent = [NSDateFormatter dateFormatFromTemplate:@"hmma" options:0 locale:locale];
         NSString *separator = NSLocalizedString(@"DATE_TIME_SEPARATOR", @"String for joining the date and time components of the date format string.");
         NSString *yesterday = NSLocalizedString(@"YESTERDAY", @"String for relative date string for yesterday.");
-        NSString *dateFormat = [[NSString alloc] initWithFormat:@"%@%@%@", yesterday, separator, timeComponent];
+        NSString *dateFormat = [[NSString alloc] initWithFormat:@"'%@%@'%@", yesterday, separator, timeComponent];
         formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:dateFormat];
     };
