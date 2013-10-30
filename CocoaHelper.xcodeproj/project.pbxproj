@@ -529,6 +529,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					62421EDE17EE518000676DA7 = {
+						TestTargetID = 62421ED117EE518000676DA7;
+					};
+					62421F0817EE519900676DA7 = {
+						TestTargetID = 62421EF817EE519900676DA7;
+					};
+				};
 			};
 			buildConfigurationList = 62421E2317EE4FBF00676DA7 /* Build configuration list for PBXProject "CocoaHelper" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -822,6 +830,10 @@
 				INFOPLIST_FILE = "CocoaHelperTests/CocoaHelperTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
@@ -863,6 +875,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "CocoaHelperTests/CocoaHelperTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
